@@ -1,177 +1,3252 @@
-1) Defina com suas palavras o que você entende por quality assurance?
-A garantia de qualidade, para mim, é como garantir que tudo fique nos trilhos quando se trata da qualidade de um produto ou serviço. É um conjunto de práticas e processos que visa evitar problemas, garantir que tudo esteja conforme os requisitos e, no final das contas, entregar algo que funcione bem e satisfaça as expectativas. É meio como ter um "guardião da qualidade" para garantir que tudo esteja nos conformes.
+package Atividade;
 
+public class Animal {
+	
+	private double altura;
+	private double peso;
+	
+	public void reproduzir()
+	{
+		System.out.println("O animal esta reproduzindo");
+	}
 
-2) Explique por que não devemos equiparar "Testes de softwares" com "Quality Assurance".
-É importante não confundir “Testes de Software” com “Garantia de Qualidade” porque, embora os testes sejam uma parte crucial da garantia de qualidade, o QA abrange um escopo mais amplo. Os testes de software são focados principalmente na detecção de defeitos, enquanto o QA engloba todo o processo, desde a prevenção de problemas até a implementação de práticas e processos para garantir a qualidade em todas as fases do desenvolvimento. Em outras palavras, os testes são uma peça do quebra-cabeça, enquanto QA é o quadro completo que visa garantir a qualidade em todos os aspectos.
+	public double getAltura() {
+		return altura;
+	}
 
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
 
-3) Explique com suas palavras o que é teste de software.
-O teste de software é basicamente uma verificação minuciosa de um programa ou sistema para ter certeza de que tudo está nos conformes. É como dar uma boa olhada em cada parte do código, clique em todos os botões possíveis e tente fazer o sistema "quebrar" de alguma forma. O objetivo é encontrar bugs, garantir que o software atenda aos requisitos e, no final das contas, entregar algo que funcione como deveria. É tipo um detetive do mundo digital, procurando pistas de problemas escondidos.
+	public double getPeso() {
+		return peso;
+	}
 
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+}
 
-4) Explique com suas palavras o que é controle de qualidade.
-O controle de qualidade é feito por meio do inspetor-chefe da produção, garantindo que tudo esteja nos conformes. É um conjunto de atividades planejadas e sistemáticas para ter certeza de que o produto ou serviço atende aos padrões de qualidade estabelecidos. Envolvemos revisões, inspeções, testes e outros métodos para identificar e corrigir problemas antes que o produto final seja entregue. Em resumo, é o cuidado extra para garantir que o que oferecemos seja top de linha e atenda a todas as expectativas de qualidade.
 
 
-5) Explique com suas palavras as diferenças entre teste de software, controle de qualidade e quality assurance.
-O teste de software é feito pelo "investigador" que examina o sistema em busca de falhas específicas. É tipo apertar todos os botões, tentar fazer o sistema "quebrar" para encontrar bugs.
-Agora, o controle de qualidade é mais como o “inspetor-chefe”, cuidando para garantir que o produto final atenda aos padrões. Envolva revisões, inspeções e testes para solucionar problemas antes que o produto seja entregue.
-Por fim, garantia de qualidade (QA) é o “guardião geral” da qualidade. Envolve todo o processo, desde a prevenção de problemas até a implementação de práticas para garantir a qualidade em todas as etapas. É como ter um plano abrangente para ter certeza de que tudo está nos trilhos. Resumindo, teste encontra problemas específicos, controle de qualidade cuida do produto final, e QA é o plano geral para garantir que tudo seja top de linha.
 
 
-6) Defina com suas palavras o que é bootcamp. Você acredita que essa metodologia de ensino auxilia o aluno a aprender?
-Bootcamp é como um mergulho intenso de aprendizado, geralmente de curta duração, focado em ensinar habilidades práticas para uma área específica, seja programação, design, ou qualquer coisa assim. Eu acho que sim, é uma metodologia que pode ser super útil. Como é bem imersivo e prático, meio que você joga na piscina das habilidades que você precisa aprender. Pode ser desafiador, mas muita gente gosta da abordagem rápida e prática que os bootcamps oferecem.
 
 
-7) Defina com suas palavras o que é Roadmap?
-O roadmap é tipo o “mapa de viagem” do projeto. É um plano estratégico que lista todas as paradas importantes ao longo do caminho. Ele mostra metas, marcos e os passos necessários para chegar lá. É tipo o GPS do projeto, garantindo que todos estejam na mesma página sobre o que precisa ser feito e quando. É uma maneira de manter as coisas organizadas e todas na direção certa.
 
 
-8) Faça uma pesquisa completa e monte um roadmap com a finalidade de auxiliar uma pessoa que está com desejo de iniciar na area de Q.A.
-Então, primeiro, seria legal começar com os conceitos básicos de QA, entender o que é e como funciona. Depois, a partir dos fundamentos dos testes de software, tipos de testes e as ferramentas mais usadas.
-Portanto, é interessante se aprofundar na automação de testes, porque isso é tipo a cereja do bolo em QA. Pode-se olhar também para metodologias ágeis, porque muitas equipes de QA trabalham dentro desses frameworks.
-Além disso, soft skills são sempre importantes, então desenvolver habilidades de comunicação, trabalho em equipe e resolução de problemas será muito útil.
-E, claro, nunca para de aprender! A área de QA está sempre evoluindo, então é bom ficar de olho nas novas tendências e tecnologias. Boa sorte na jornada de QA!
 
+package Atividade;
 
-9) Defina com suas palavras o que são softs skills.
-Soft skills são as habilidades mais sociais e interpessoais que as pessoas usam no dia a dia, sabia? É como ser bom na comunicação, trabalhar em equipe, ser empático, ter boa capacidade de resolução de conflitos e essas coisinhas que fazem a convivência ser mais tranquila. São super importantes no mundo profissional, ajudar a construir boas relações e lidar melhor com as situações do dia a dia no trabalho.
+public class Atum extends Peixe {
+	
+	public void comerAlga() {
+		System.out.println("Fazendo dieta");
+	}
 
+}
 
-10) Defina com suas palavras o que são hards kills.
-Hard skills são meio que habilidades mais técnicas, sabia? Tipo, são aqueles que as pessoas podem aprender através de treinamento e prática específica. Em QA, seriam coisas como conhecimento em automação de testes, entender de programação, manjar das ferramentas de teste essas habilidades mais específicas para a área em que as pessoas trabalham. É tipo o lado mais técnico e prático das habilidades, diferente das soft skills que são mais sociais e interpessoais.
 
 
-11) Quais são as softs skills necessárias para atuar na área de Q.A.?
-Na área de QA, soft skills são super importantes! Primeiro, a comunicação é fundamental, porque a gente precisa explicar os bugs e os resultados dos testes de uma forma que todo mundo entende. Trabalhar em equipe também é essencial, já que as pessoas geralmente fazem parte de uma equipe maior de desenvolvimento. Atenção aos detalhes é outra, porque a gente precisa identificar até os problemas mais sutis. Além disso, ser adaptável e ter boa capacidade de resolução de problemas é sempre útil, porque, vamos ser sinceros, nem tudo no mundo do QA segue um roteiro certinho. Ah, e paciência, porque às vezes encontrar bugs pode ser do tipo procurar agulha no palheiro, né? Então, essas são algumas habilidades sociais importantes por aqui.
 
 
-12) Quais são as hards skills necessárias para atuar na área de Q.A.?
-Em QA a coisa é um pouco mais técnica. Automatizar testes é uma baita habilidade, tipo saber criar scripts e usar ferramentas para agilizar o processo. Conhecimento em metodologias de teste também é importante, porque isso orienta a forma como as pessoas abordam os testes. Programação é uma mão na roda, mesmo que não seja um especialista, entendo bastante a ajuda básica. E, claro, familiaridade com as ferramentas de teste mais usadas no mercado é sempre um diferencial. É meio que essa combinação de habilidades que fazem a mágica acontecer no mundo do QA.
 
 
-13) Porque o Q.A. necessita possuir um olhar comercial sobre os projetos que trabalham?
-O lance do olhar comercial em QA é entender que o que a gente faz não é só sobre encontrar bugs ou testar funcionalidades. É sobre como a qualidade do que estamos testando diretamente sobre o sucesso do negócio. Se as pessoas entregam um produto de alta qualidade, os clientes ficam satisfeitos, e isso impacta positivamente nos resultados da empresa. Ter essa visão mais ampla ajuda a alinhar o trabalho de QA com os objetivos comerciais, porque no final das contas, a qualidade do software não é apenas uma questão técnica, é uma peça chave para o sucesso da empresa como um todo. É tipo ser o guardião da qualidade, não só do código, mas do negócio em si.
 
 
-14) Explique com suas palavras o que ocorre durante o processo de compilação.
-O processo de compilação é meio que a mágica que transforma nosso código-fonte em algo que o computador entende e executa. Quando a gente escreve código, tá tudo em linguagem que a gente entende, né? Mas o computador não manja nada disso. Então, durante a compilação, o compilador pega nosso código-fonte, verifica se está tudo certo, traduz isso para a linguagem de máquina, e cria um programa incluídovel. É o tipo de momento em que nosso código ganha vida e se transforma em algo que o computador pode rodar. Isso é crucial para garantir que nosso software funcione como deveria. Se rolar algum erro nesse processo, pode gerar aqueles bugs e problemas famosos na execução do programa. Resumindo, é uma etapa em que nosso código se transforma em algo que o computador pode entender e executar.
+package Atividade;
 
+public class Cachorro extends Mamifero{
+	
+	public void abanarRabo() {
+		System.out.println("Cachorro feliz!!!");
+	}
+	
+	public void emitirSom() {
+		System.out.println("Latindo! Au! Au! Au!");
+	}
 
-15)Qual dos seguintes é um tipo primitivo em Java? 
-e) Booleano
+}
 
 
-16) Qual palavra-chave é usada para declarar uma classe em Java? 
-b) aula
 
 
-17)Qual dos seguintes operadores é usado para realizar a divisão inteira em Java?
-b)%
 
 
-18)O que é um método em Java? 
-c) Um conjunto de instruções que executa uma tarefa específica 
 
 
-19)Qual é a diferença entre um método estático e um método de instância em Java? 
-a) Um método estático pode ser chamado diretamente na classe, enquanto um método de instância requer uma instância da classe para ser chamado.
 
 
-20)Qual dos seguintes é um exemplo de um laço de repetição em Java? 
-c) for 
+package Atividade;
 
+public class Cavalo extends Mamifero{
+	
+	public void trotar() {
+		System.out.println("o cavalo esta trotando");
+	}
+	
+public void emitirSom()
+{
+	System.out.println("");
+}
+}
 
-21)O que é um construtor em Java? 
-e) Um método especial usado para inicializar objetos em Java. 
 
 
-22)Qual é a diferença entre um array unidimensional e um array multidimensional em Java? 
-c) Um array unidimensional pode ter apenas uma dimensão, enquanto um array multidimensional pode ter duas ou mais dimensões. 
 
 
-23)Qual é a saída deste código Java? 
-b) 2.0 
 
 
-24)Qual das seguintes opções define corretamente o Java? 
-a) Uma linguagem de programação orientada a objetos. 
 
+package Atividade;
 
-25)O Java é uma linguagem compilada ou interpretada? 
-c) Híbrida (compilada e interpretada). 
+public class Exercicio1Heranca {
 
+	@SuppressWarnings("unused")
+	public static void main(String[] args) {
+		
+		Animal an = new Animal();
+		Peixe p = new Peixe();
+		Mamifero m = new Mamifero();
+		Tubarao t = new Tubarao();
+		Atum at = new Atum();
+		Cavalo cav = new Cavalo();
+		Cachorro cac = new Cachorro();
+		
 
-26)Qual das seguintes opções é a correta definição de um método em Java? 
-c) Um bloco de código que executa uma ação específica. 
 
+	}
 
-27)Qual é o ponto de entrada de um programa Java? 
-b) O método "main()". 
+}
 
 
-28)Qual das seguintes opções é a correta sintaxe para a declaração de uma variável em Java? 
-d) Todas as alternativas anteriores estão corretas. 
 
 
-29)Qual é a diferença entre uma variável primitiva e uma variável de referência em Java? 
-b) Variáveis primitivas armazenam diretamente o valor, enquanto variáveis de referência armazenam uma referência ao objeto. 
 
 
-30)Qual é o operador utilizado para atribuição de valor em Java? 
-a) = 
 
 
-31)Qual é a diferença entre "==" e ".equals()" em Java? 
-a) "==" é utilizado para comparar valores primitivos, enquanto ".equals()" é utilizado para comparar objetos. 
 
+package Atividade;
 
-32)O que é uma exceção em Java? 
-c) Um objeto que representa um erro ou uma condição excepcional. 
+public class Mamifero extends Animal{
+	
+	private String corPelo;
+	private String comprimento;//curto, comprido, sem pelo
+	
+	public void amamentar()
+	{
+		System.out.println("Animal mamando");
+	}
 
+	public String getCorPelo() {
+		return corPelo;
+	}
 
-33)O que é o conceito de herança em Java? 
-c) É a capacidade de uma classe ser estendida por outras classes. 
+	public void setCorPelo(String corPelo) {
+		this.corPelo = corPelo;
+	}
 
+	public String getComprimento() {
+		return comprimento;
+	}
 
-34)Qual é a principal finalidade da linguagem de programação Java? 
-e) Criar aplicações de software de propósito geral 
+	public void setComprimento(String comprimento) {
+		this.comprimento = comprimento;
+	}
 
+}
 
-35)Qual é o principal princípio da linguagem Java? 
-c) Portabilidade 
 
 
-36)O que é um objeto em Java? 
-b) Uma estrutura de dados que armazena informações 
 
 
-37)Qual é a função do método main() em um programa Java? 
-d) Iniciar a execução do programa 
 
 
-38)Qual é a sintaxe correta para declarar uma variável em Java? 
-b) int variableName; 
 
 
-39)O que é um array em Java? 
-d) Uma estrutura de dados que armazena múltiplos valores do mesmo tipo 
+package Atividade;
 
+public class Peixe extends Animal{
+	
+	private String corEscama;
+	private int numBarbatana;
+	
+	public void respirarEmbaixoDagua()
+	{
+		System.out.println("Peixe respirando!!! glub glub glub");
+	}
 
-40)O que é o conceito de herança em Java? 
-d) Um mecanismo para reutilizar características de uma classe em outra classe 
+	public String getCorEscama() {
+		return corEscama;
+	}
 
+	public void setCorEscama(String corEscama) {
+		this.corEscama = corEscama;
+	}
 
-41)O que é uma exceção em Java? 
-e) Um evento que ocorre durante a execução do programa e requer tratamento especial 
+	public int getNumBarbatana() {
+		return numBarbatana;
+	}
 
+	public void setNumBarbatana(int numBarbatana) {
+		this.numBarbatana = numBarbatana;
+	}
+	
+	
 
-42)Qual é a forma correta de criar um objeto em Java? 
-e) ObjectName = new ObjectName(); 
+}
 
 
-43)O que é um método em Java? 
-c) Uma função que executa uma ação específica 
+
+
+
+
+package Atividade;
+
+public class Tubarao extends Peixe{
+	
+	public void comerCarne() {
+		System.out.println("Tubarao comendo poutros animais");
+	}
+
+}
+
+
+
+
+
+
+
+
+
+package CaixaEletronico;
+
+import java.util.Scanner;
+
+public class CaixaEletronico {
+    private static double saldo = 1000; // Exemplo de saldo inicial
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        boolean continuar = true;
+
+        while (continuar) {
+            exibirMenu();
+
+            int opcao = sc.nextInt();
+
+            switch (opcao) {
+                case 1:
+                    consultarSaldo();
+                    break;
+                case 2:
+                    realizarSaque();
+                    break;
+                case 3:
+                    realizarDeposito();
+                    break;
+                case 4:
+                    System.out.println("Obrigado por usar o Caixa Eletrônico. Até a próxima!");
+                    continuar = false;
+                    break;
+                default:
+                    System.out.println("Opção inválida. Tente novamente.");
+                    break;
+            }
+        }
+
+        sc.close();
+    }
+
+    private static void exibirMenu() {
+        System.out.println("\nCaixa Eletrônico Braços Curtos \n da Unipaulistana");
+        System.out.println("1 - Consultar Saldo");
+        System.out.println("2 - Saque");
+        System.out.println("3 - Depósito");
+        System.out.println("4 - Sair");
+        System.out.println("Digite a opção desejada:");
+    }
+
+    private static void consultarSaldo() {
+        System.out.println("Seu saldo atual é: R$" + saldo);
+    }
+
+    private static void realizarSaque() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o valor que deseja sacar: ");
+        double valorSaque = sc.nextDouble();
+
+        if (valorSaque > 0 && valorSaque <= saldo) {
+            saldo -= valorSaque;
+            System.out.println("Saque realizado com sucesso. Novo saldo: R$" + saldo);
+        } else {
+            System.out.println("Valor inválido ou saldo insuficiente.");
+            sc.close();
+        }
+    }
+
+    private static void realizarDeposito() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o valor que deseja depositar: ");
+        double valorDeposito = sc.nextDouble();
+
+        if (valorDeposito > 0) {
+            saldo += valorDeposito;
+            System.out.println("Depósito realizado com sucesso. Novo saldo: R$" + saldo);
+        } else {
+            System.out.println("Valor inválido para depósito.");
+            sc.close();
+        }
+    } 
+    
+}
+
+
+
+
+
+
+
+
+
+package Clases4;
+
+public class Carro implements Veiculo {
+ 
+	
+	private String marca;
+	private String modelo;
+	public String getMarca() {
+		return marca;
+	}
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+	public String getModelo() {
+		return modelo;
+	}
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	public int getVelocidade() {
+		return velocidade;
+	}
+	public int getMarcha() {
+		return marcha;
+	}
+	public boolean isLigado() {
+		return ligado;
+	}
+
+	private int velocidade;
+	private int marcha;
+	private boolean ligado;
+	@Override
+	public void ligar() {
+		if(ligado==false && marcha==0)
+			this.ligado=true;
+		else
+			System.out.println("Erro! Verifique a marcha e se o carro ja esta ligado");
+		
+	}
+	@Override
+	public void desligar() {
+		if(ligado==true && marcha==0 && velocidade==0)
+			this.ligado=false;
+		else
+			System.out.println("Erro! Verifique a marcha se o carro esta desligado e parado");
+		
+	}
+	@Override
+	public void acelerar() {
+		if(ligado==true && marcha!=0)
+			this.velocidade++;
+	else
+		System.out.println("Erro! Verifique a marcha e se o carro esta ligado");
+		
+	}
+	@Override
+	public void frear() {
+		if(ligado==true && velocidade>0)
+			this.velocidade--;
+		else
+			System.out.println("Erro! Verifique a velocidade e se o carro esta ligado" );
+		
+	}
+
+	@Override
+	public String TrocaMarcha() {
+	this.marcha++;
+	return marca;
+
+	}
+	public String getLigado() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void trocarMarcha() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+	
+	
+
+
+
+
+
+
+
+
+package Clases4;
+
+public class Interface1 {
+    public static void main(String[] args) {
+
+        // Criando um objeto da classe Carro
+        Carro c1 = new Carro();
+        Moto m1 = new Moto();
+
+        System.out.println("Mostrando o estado inicial do carro\n");
+        System.out.println("A marca do carro é: " + c1.getMarca());
+        System.out.println("O modelo do carro é: " + c1.getModelo());
+        System.out.println("O carro está ligado? " + c1.getLigado());
+        System.out.println("A marcha atual é: " + c1.getMarcha());
+        System.out.println("A velocidade atual é: " + c1.getVelocidade());
+
+        c1.setMarca("Honda");
+        c1.setModelo("Civic");
+        c1.ligar();
+        c1.trocarMarcha();
+        c1.acelerar();
+
+        System.out.println("\nMostrando o estado do carro depois das alterações\n");
+        System.out.println("A marca do carro é: " + c1.getMarca());
+        System.out.println("O modelo do carro é: " + c1.getModelo());
+        System.out.println("O carro está ligado? " + c1.getLigado());
+        System.out.println("A marcha atual é: " + c1.getMarcha());
+        System.out.println("A velocidade atual é: " + c1.getVelocidade() + "km/h");
+
+        // Configurando o estado inicial da moto
+        m1.setMarca("Yamaha");
+        m1.setModelo("YZF");
+        m1.ligar();
+        m1.TrocaMarcha();
+        m1.acelerar();
+
+        System.out.println("\nMostrando o estado inicial da moto\n");
+        System.out.println("A marca da moto é: " + m1.getMarca());
+        System.out.println("O modelo da moto é: " + m1.getModelo());
+        System.out.println("A moto está ligada? " + m1.getLigado());
+        System.out.println("A marcha atual é: " + m1.getMarca());
+        System.out.println("A velocidade atual é: " + m1.getVelocidade() + "km/h");
+    }
+}
+
+
+
+
+
+
+
+
+
+package Clases4;
+
+public class Moto implements Veiculo {
+
+    private String marca;
+    private String modelo;
+    private int velocidade;
+    private int marcha;
+    private boolean ligado;
+
+    @Override
+    public void ligar() {
+        if (!ligado && velocidade == 0) {
+            ligado = true;
+        } else {
+            System.out.println("Erro ao ligar a moto");
+        }
+    }
+
+    @Override
+    public void desligar() {
+        if (ligado && velocidade == 0) {
+            ligado = false;
+        } else {
+            System.out.println("Erro ao desligar a moto");
+        }
+    }
+
+    @Override
+    public void acelerar() {
+        if (ligado && marcha > 0) {
+            velocidade += 3;
+        } else {
+            System.out.println("Problema na aceleração");
+        }
+    }
+
+    @Override
+    public void frear() {
+        if (ligado && velocidade > 0) {
+            velocidade -= 3;
+        } else {
+            System.out.println("Problema na frenagem");
+        }
+    }
+
+    @Override
+    public String TrocaMarcha() {
+        if (ligado && velocidade > 0) {
+            marcha++;
+        } else {
+            System.out.println("Problema na troca de marcha");
+        }
+        return "Marcha atual: " + marcha;
+    }
+
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+
+	public String getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+	public String getLigado() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getVelocidade() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
+
+
+
+
+
+
+
+package Clases4;
+
+public interface Veiculo {
+	
+	public abstract void ligar();
+	public abstract void desligar();
+	    public abstract void acelerar();
+	    public abstract void frear();
+	    public abstract String TrocaMarcha();
+
+	}
+
+
+
+
+
+
+
+
+
+package Encapsulamento;
+
+public class Bomba {
+	
+	    private String combustivel;
+	    private double preco;
+	    private double qtd;
+	    private boolean ligada;
+	    
+	    
+	    public void ligar()
+	    {
+	    	if(ligada==true)
+	    		System.out.println("A bomba ja esta ligada");
+	    	else
+	    		this.ligada=true;
+	    }
+	    public String getCombustivel() {
+			return combustivel;
+		}
+		public void setCombustivel(String combustivel) {
+			this.combustivel = combustivel;
+		}
+		public double getPreco() {
+			return preco;
+		}
+		public void setPreco(double preco) {
+			this.preco = preco;
+		}
+		public double getQtd() {
+			return qtd;
+		}
+		public void setQtd(double qtd) {
+			this.qtd = qtd;
+		}
+		public boolean isLigada() {
+			return ligada;
+		}
+		public void desligar()
+	    {
+	    		if(ligada==true)
+	    			this.ligada=false;
+	    		else
+	    			System.out.println("A bomba ja esta desligada");
+	    }
+	    
+	    public double valorTotal() {
+	    	return this.preco*this.qtd;
+
+	    }
+	}
+
+
+
+
+
+
+
+package Encapsulamento;
+
+public class Exercicio2 {
+	public static void main(String[] args) {
+		Bomba b1 = new Bomba();
+		b1.setCombustivel("Etanol");
+		b1.setPreco(3.17);
+		b1.setQtd(30);
+		System.out.println("O tipo de combustivel é: "+b1.getCombustivel());
+		System.out.println("O total a pagar é: "+b1.valorTotal());
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+package Encapsulamento;
+public interface InterRadio {
+	
+	public abstract void ligar ();
+	public abstract void desligar();
+	public abstract void maisvolume();
+	public abstract void menosvolume();
+	public abstract void trocarestacao();
+	public abstract void mudo();
+	
+
+
+}
+
+
+
+
+
+
+
+
+
+package Encapsulamento;
+
+public interface InterRelogio {
+	
+	public abstract void ajustarHora(int h);
+	public abstract void ajustarMinuto(int m);
+	public abstract void mostrarHora( );
+	public abstract void ligarAlarme(int h, int m);
+	public abstract void desligarAlarme();
+
+}
+
+
+
+
+
+
+
+
+	package Encapsulamento;
+	public class Radio implements InterRadio{
+	//ATRIBUTOS
+	private int vol;
+	private Boolean ligado;
+	
+	
+	public int getVol() {
+		return vol;
+	}
+	public Boolean getLigado() {
+		return ligado;
+	}
+		////////////////////////////////////////////////////
+		public void ligar() {
+		if(this.ligado==true)
+			System.out.println("O radio ja esta ligado");
+		else {
+			this.ligado=true;
+			this.vol=5;
+		}
+	}
+	/////////////////////////////////////////////////////
+	public void desligar() {
+		if(this.ligado==false)
+			System.out.println("O radio ja esta desligado");
+		else 
+			this.ligado=false;
+	
+		
+	}
+	@Override
+	public void maisvolume() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void menosvolume() {
+		// TODO Auto-generated method stub
+		
+	}
+    /////////////////////////////////////////////////////
+	public void trocarestacao() {
+		if(this.ligado==false)
+			System.out.println("Trocando a estação...");
+		else 
+			System.out.println("O radio esta desligado");
+	}
+	/////////////////////////////////////////////////////
+	
+	public void mudo() {
+		this.vol=0;
+	/////////////////////////////////////////////////////	
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+package Encapsulamento;
+
+public class RadioRelogio implements InterRadio, InterRelogio {
+    private int vol;
+    private int hora;
+    private int minuto;
+    @Override
+    public void ajustarHora(int h) {
+        if (h >= 0 && h < 24) {
+            this.hora = h;
+        } else {
+            System.out.println("Hora inválida");
+        }
+    }
+
+    @Override
+    public void ajustarMinuto(int m) {
+        if (m >= 0 && m < 60) {
+            this.minuto = m;
+        } else {
+            System.out.println("Minuto inválido");
+        }
+    }
+
+    @Override
+    public void mostrarHora() {
+        System.out.println(this.hora + ":" + this.minuto);
+    }
+
+    @Override
+    public void ligarAlarme(int h, int m) {
+        System.out.println("Alarme ligado para " + h + ":" + m);
+    }
+
+    @Override
+    public void desligarAlarme() {
+        System.out.println("Alarme desligado");
+    }
+
+    @Override
+    public void ligar() {
+        System.out.println("O rádio está ligado");
+    }
+
+    @Override
+    public void desligar() {
+        System.out.println("O rádio está desligado");
+    }
+
+    @Override
+    public void maisvolume() {
+        if (this.vol < 10) {
+            this.vol++;
+            System.out.println("Volume aumentado para " + this.vol);
+        } else {
+            System.out.println("Volume no máximo");
+        }
+    }
+
+    @Override
+    public void menosvolume() {
+        if (this.vol > 0) {
+            this.vol--;
+            System.out.println("Volume diminuído para " + this.vol);
+        } else {
+            System.out.println("Volume no mínimo");
+        }
+    }
+
+    @Override
+    public void trocarestacao() {
+        // Implementação para trocar de estação de rádio
+        System.out.println("Estação de rádio trocada");
+    }
+
+    @Override
+    public void mudo() {
+        this.vol = 0;
+        System.out.println("Som mudo");
+    }
+}
+
+
+
+
+
+
+
+
+
+package Encapsulamento;
+
+public class Relogio implements InterRelogio{
+
+	private int hora;
+	private int minuto;
+	private int horaAlarme;
+	private int minutosAlarme;
+	
+	
+	@Override
+	public void ajustarHora(int h) {
+		if(h>0 && h<=12)
+			this.hora=h;
+		else
+			System.out.println("Valor invalido...");
+	}
+	
+	
+	@Override
+	public void ajustarMinuto(int m) {
+		if(m>=0 && m<60)
+			this.minuto=m;
+		else
+			System.out.println("Valor invalido...");
+	}
+	
+	
+	@Override
+	public void mostrarHora() {
+		System.out.println("São " +this.hora+" horas e "+this.minuto+" minutos");
+	}
+	
+	
+	@Override
+	public void ligarAlarme(int h, int m) {
+		this.horaAlarme=h;
+		this.minutosAlarme=m;
+		
+	}
+	@Override
+	public void desligarAlarme() {
+		System.out.println("Alarme desligado");
+		
+	}
+
+
+	public int getHoraAlarme() {
+		return horaAlarme;
+	}
+
+
+	public int getMinutosAlarme() {
+		return minutosAlarme;
+	}
+	
+}
+
+
+
+
+
+
+
+package Encapsulamentoo;
+
+import herança.Pessoa;
+
+public class Aluno extends Pessoa {
+		public Aluno(String pnome, String pcpf, int pidade) {
+		super(pnome, pcpf, pidade);
+	}
+
+		private int ra;
+		private double media;
+
+		public void entregarTarefa() {
+			System.out.println("Tarefa entregue com sucesso");
+		}
+
+		public int getRa() {
+			return ra;
+		}
+
+		public void setRa(int ra) {
+			this.ra = ra;
+		}
+
+		public double getMedia() {
+			return media;
+		}
+
+		public void setMedia(double media) {
+			this.media = media;
+		}
+
+	}
+
+
+
+
+package Encapsulamentoo;
+
+import herança.Pessoa;
+
+public class ExemploEranca {
+	
+	public static void main(String[] args) {
+		new Pessoa (null, null, 0);
+		new Professor(null, null, 0);
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+package Encapsulamentoo;
+
+public abstract class  Pessoa {
+
+	protected String nome;
+	protected String telefone;
+	protected String endereco;
+	protected String email;
+	protected int idade=0;
+	
+	
+	public void aniversario()
+	{
+		this.idade++;
+	}
+	
+	public String getNome() {
+		return nome;
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+package Encapsulamentoo;
+
+import herança.Pessoa;
+
+public class Professor extends Pessoa{
+		
+		public Professor(String pnome, String pcpf, int pidade) {
+		super(pnome, pcpf, pidade);
+		// TODO Auto-generated constructor stub
+	}
+
+		private String disciplina;
+		private double salario=0;
+		
+		public void aumentoSalario(double x)
+		{
+			this.salario+=x;//=> this.salario=this.salario+x
+		}
+
+		public String getDisciplina() {
+			return disciplina;
+		}
+
+		public void setDisciplina(String disciplina) {
+			this.disciplina = disciplina;
+		}
+
+		public double getSalario() {
+			return salario;
+		}
+
+		public void setSalario(double salario) {
+			this.salario = salario;
+		}
+	}
+
+
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class RestodaDivisao {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite um numero:");
+		int numero = sc.nextInt();
+
+		if (numero == 1) {
+			System.out.println("Domingo");
+		} else if (numero == 2) {
+			System.out.println("Segunda");
+		} else if (numero == 3) {
+			System.out.println("Terça-Feira");
+
+		} else if (numero == 4) {
+			System.out.println("Quarta-Feira");
+
+		} else if (numero == 5) {
+			System.out.println("Quinta-Feira");
+
+		} else if (numero == 6) {
+			System.out.println("Sexta-feira");
+		} else if (numero == 7) {
+			System.out.println("Sabado");
+		} else {
+			System.out.println("Não possui numero correspondente");
+
+			sc.close();
+		}
+
+	}
+
+}
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class Meses {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite um numero:");
+		int numero = sc.nextInt();
+
+		if (numero == 1) {
+			System.out.println("Janeiro");
+		} else if (numero == 2) {
+			System.out.println("Fevereiro");
+		} else if (numero == 3) {
+			System.out.println("março");
+
+		} else if (numero == 4) {
+			System.out.println("Abril");
+
+		} else if (numero == 5) {
+			System.out.println("Maio");
+
+		} else if (numero == 6) {
+			System.out.println("Junho");
+		} else if (numero == 7) {
+			System.out.println("Julho");
+		} else if (numero == 8) {
+			System.out.println("Agosto");
+		} else if (numero == 9) {
+			System.out.println("Setembro");
+		} else if (numero == 10) {
+			System.out.println("Outubro");
+		} else if (numero == 11) {
+			System.out.println("Novembro");
+		} else if (numero == 12) {
+			System.out.println("Dezembro");
+		} else {
+			System.out.println("Não possui numero correspondente");
+
+			sc.close();
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class VendasCarro {
+	
+		//11) uma revendedora de carros usados paga a seus funcionarios vendedores um salario fixo por mes, mais uma comissão 
+		//tambem fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas. escrever um algoritmo que leia o 
+	    //numero de carros por ele vendidos, o valor toral de suas vendas, o salario fixo e o valor que ele recebe por carro vendido, 
+		//calcule e escreva o salario final do vendedor
+	
+		public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o numero de carros vendidos: ");
+		double carros=sc.nextDouble();
+		
+		System.out.println("Digite o valor total das vendas: ");
+		double vendas=sc.nextDouble();
+		
+		System.out.println("Digite o salario fixo: ");
+		double salario=sc.nextDouble();
+		
+		System.out.println("Digite o valor por cada carro vendido: ");
+		double valor=sc.nextDouble();
+		
+		double comissãocarros= carros*valor;
+		double comissãovendas= 0.05 * vendas;
+		double salariofinal= salario+comissãovendas+comissãocarros;
+		
+		System.out.println("O novo salario sera : "+salariofinal);
+		
+		sc.close();
+	}
+
+}
+
+
+
+
+
+
+
+		package exemplos;
+		import java.util.Scanner;
+		public class UrnaEleicao {
+    	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite a quantidade total de eleitores do municipío : ");
+        float quantidadeTotalEleitores= sc.nextFloat();
+
+        System.out.println("Digite a quantidade de votos brancos do municipío : ");
+        int quantidadeVotosBrancos= sc.nextInt();
+
+
+        //Processamento
+        float porcentagemVotosBrancos = quantidadeVotosBrancos/quantidadeTotalEleitores*100;
+        
+      
+        //Saída
+        System.out.println("A porcentagem de votos brancos corresponde a : "+porcentagemVotosBrancos + "%");
+
+		sc.close();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class SwitchCase {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+	
+	
+	System.out.println("Digite um numero : ");
+	int numero = sc.nextInt();
+	
+	
+	switch(numero) {
+	case 1:
+	System.out.println("Domingo");
+	break;
+	case 2:
+	System.out.println("Segunda");
+	break;
+	case 3:
+	System.out.println("Terça");
+	break;
+	case 4:
+	System.out.println("Quarta");
+	break;
+	case 5:
+	System.out.println("Quinta");
+	break;
+	case 6:
+	System.out.println("Sexta");
+	break;
+	case 7:
+	System.out.println("Sabado");
+	break;
+	default:
+		System.out.println("Não possui dia correspondente");
+	break;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+sc.close();
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class Subtracao {
+	
+		public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o primeiro valor inteiro :");
+		int valor1= sc.nextInt();
+		System.out.println("Digite o segundo valor inteiro");
+		int valor2=sc.nextInt();
+		int subtracao=valor1-valor2;
+		System.out.println("O valor da subtracao é : "+subtracao);
+		sc.close();
+	}
+}
+
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class SomaDigite {
+	
+		public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o primeiro valor inteiro: ");
+		int valor1=sc.nextInt();
+		
+		System.out.println("Digite o segundo valor inteiro: ");
+		int valor2=sc.nextInt();
+		
+		int soma= valor1+valor2;
+		
+		System.out.println("O valor da soma correnponde a : "+soma);
+		
+		sc.close();
+	}
+
+}
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class Exercicio10 {
+	public static void main(String[]args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o valor do custo de fabricação do automovel : R$");
+		float valorAutomovel = sc.nextFloat();
+		float distribuidor = valorAutomovel*28/100;
+		float imposto = valorAutomovel*45/100;
+		float valorFinal = valorAutomovel+distribuidor+imposto;
+		System.out.println("O valor final do automovel corresponde a : R$"+valorFinal);
+		sc.close();
+	}
+
+}
+
+
+
+
+
+
+
+package exemplos;
+
+public class Exercicio1 {
+	public static void main(String[] args) {
+		Carro uno = new Carro();
+		double valorDolar;
+		uno.setCor("amarelo");
+		System.out.println("A cor do carro é: "+uno.getCor());
+		uno.setAno(95);
+		System.out.println("O ano do carro é: "+uno.getAno());
+		uno.setPreco(10000);
+		System.out.println("O valor do carro e: "+uno.getPreco());
+		valorDolar=uno.getPreco()/5;
+		System.out.println("O valor do carro em Dolar é: "+valorDolar);
+		uno.estado();
+		uno.setMarca("FIAT");
+		uno.setModelo("Uno Mille 1.5s");
+		System.out.println("A marca do carro é: "+uno.getMarca());
+		System.out.println("O modelo do carro é: "+uno.getModelo());
+
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+//Desvio condicional Simples
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class ExemploIfElse01 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite sua idade:");
+		int idade = sc.nextInt();
+		
+		if(idade < 16) {
+			System.out.println("Voce ainda nao pode voltar");
+		} else {
+			System.out.println("Voce pode votar");
+		}
+		sc.close();
+	}
+}
+
+
+
+
+
+
+//Desvio condicional Simples
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class ExemploIF {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite um numero:");
+		int idade = sc.nextInt();
+		
+		if(idade < 12) {
+			System.out.println("Voce ainda é uma criança");
+			
+		}
+		sc.close();
+	}
+
+}
+
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class Divisão {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+				
+		System.err.println("Digite um numero");
+		int numero=sc.nextInt();
+		
+		System.err.println("Digite um numero");
+		int numero1=sc.nextInt();
+		
+		float divisao=numero/numero1;
+				
+		System.out.printf("A divisão é : %.3f" ,divisao);
+		
+		sc.close();
+	}
+
+}
+
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class Divisao {
+	
+		public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o primeiro valor inteiro: ");
+		double valor1=sc.nextDouble();
+		
+		System.out.println("Digite o segundo valor inteiro: ");
+		double valor2=sc.nextDouble();
+		
+		double soma= valor1/valor2;
+		
+		System.out.println("O valor da soma correnponde a : "+soma);
+		
+		sc.close();
+	}
+
+}
+
+
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class CustoCarro {
+	
+		//10) o custo de um carro novo ao consumidor é a soma do custo de fabrica com a porcentagem do distribuidor e dos impostos
+		//(aplicados ao custo de fabrica).supondo que o percentual do distribuidor seja de 28% e os impostos de 45%. escrever um algoritmo
+	    //para ler o custo de fabrica de um carro, calcular e escrever o custo final ao consumidor
+	
+		public static void main(String [] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o custo de fabricação do carro: ");
+		double fabricacao=sc.nextDouble();
+		
+		//definindo as porcentagens %%%%%
+		double distribuidor = 0.28;
+		double impostos = 0.45;
+		
+		
+        // Calcular o custo do distribuidor
+        double custoDistribuidor = fabricacao * distribuidor;
+
+        // Calcular o custo dos impostos
+        double impostos1 = fabricacao * impostos;
+
+        // Calcular o custo final ao consumidor
+        double custoFinal = fabricacao + custoDistribuidor + impostos1;
+		
+		System.out.println("O custo do carro de fabrica é : "+custoFinal);
+		
+		sc.close();
+	}
+
+}
+
+
+
+
+
+
+package exemplos;
+
+public class CarroCaneta {
+
+    public static void main(String[] args) {
+        // Criar uma instância de Carro
+        Carro meuCarro = new Carro();
+        
+        // Exibir o estado inicial do carro
+        meuCarro.estado();
+        
+        // Ligar o carro
+        meuCarro.ligar();
+        
+        // Acelerar o carro
+        meuCarro.acelerar();
+        
+        // Exibir o estado do carro após ligar e acelerar
+        meuCarro.estado();
+        
+        // Criar uma instância de Caneta
+        Caneta minhaCaneta = new Caneta("Azul", 0.7);
+        
+        // Exibir o estado inicial da caneta
+        minhaCaneta.estado();
+        
+        // Destampar a caneta
+        minhaCaneta.destampar();
+        
+        // Escrever com a caneta
+        minhaCaneta.escrever();
+        
+        // Exibir o estado da caneta após destampar e escrever
+        minhaCaneta.estado();
+    }
+}
+
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class Sucessor {
+	
+		//5)escreva um algoritimo para ler um valor(so teclado) e escrever (na tela) o seu Sucessor
+		public static void main(String [] args) {	
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite um numero para aparecer o Sucessor: ");
+		int valor1=sc.nextInt();
+		int sucessor= valor1+1;
+		System.out.println("O Sucessor é  : "+sucessor);
+		sc.close();
+	}
+
+}
+
+
+
+
+
+
+
+
+package exemplos;
+;
+
+public class Somas {
+	
+		public static void main(String [] args) {
+		
+		//Entrada de Dados
+		int a= 6 * (3+2);       //Processamento
+		int b= 2+(6*(3+2)) ;          //Processamento
+		int c= 2+(3*6)/(2+4) ;        //Processamento
+		int d= 2*(8/(3+1))   ;      //Processamento
+		int e= 3+(16-2)/(2*(9-2)) ;        //Processamento
+		int f= (6/3)+(8/2)   ;      //Processamento
+		int g= ((3+(8/2))*4)+(3*2)  ;       //Processamento
+		int h= (6*(3*3)+6)-10  ;       //Processamento
+		int i=  (((10*8)+3)*9)  ;      //Processamento
+		int j=  ((-12)*(-4))+(3*(-4)) ;       //Processamento
+		
+		//Saida
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+		System.out.println(e);
+		System.out.println(f);
+		System.out.println(g);
+		System.out.println(h);
+		System.out.println(i);
+		System.out.println(j);
+		
+	}
+
+}
+
+
+
+
+
+
+
+package exemplos;
+
+public class soma_pronta {
+	
+		public static void main(String [] args) {
+		
+		//Entrada de Dados
+		int valor1=10;
+		int valor2=12;
+		//Processamento
+		int soma = valor1+valor2;
+		//Saida
+		System.out.println("A soma dos valores corresponde a : "+soma);
+		
+	}
+
+}
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class Antecessor {
+	
+		//5)escreva um algoritimo para ler um valor(so teclado) e escrever (na tela) o seu antecessor
+	
+		public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o  valor para ver seu antecessor: ");
+		int valor1=sc.nextInt();
+		
+		
+		int soma= valor1-1;
+		
+		System.out.println("O antecessor do valor digitado é  : "+soma);
+		sc.close();
+	}
+
+}
+
+
+
+
+
+
+package exemplos;
+
+public class Aluno {
+    // Atributos
+    private String nome;
+    private int idade;
+    private char sexo;
+    private String turma;
+    private double nota = 0.0;
+    private String situacao = "Não avaliado";
+
+    // Comportamento: Fazer atividades
+    public void fazerAtividades() {
+        System.out.println(nome + " está fazendo as atividades.");
+        // Implemente a lógica real das atividades aqui
+    }
+
+    // Comportamento: Responder chamada
+    public void responderChamada() {
+        System.out.println(nome + " está respondendo à chamada.");
+        // Implemente a lógica real de resposta à chamada aqui
+    }
+
+    // Comportamento: Fazer prova
+    public void fazerProva(double nota) {
+        this.nota = nota;
+
+        if (nota >= 6.0) {
+            this.situacao = "Aprovado";
+        } else {
+            this.situacao = "Reprovado";
+        }
+    }
+
+    // Métodos para obter informações
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public String getTurma() {
+        return turma;
+    }
+
+    public double getNota() {
+        return nota;
+    }
+
+    public String getSituacao() {
+        return situacao;
+        
+        
+    }
+}
+
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class AreaRetangulo{
+	
+		//6)escreva um algoritmo para ler as dimensões de um retangulo (base e altura), calcular e escrever a area do retangulo
+	
+		public static void main(String [] args) {	
+		Scanner sc = new Scanner(System.in);	
+		
+		System.out.println("Programa que efetua o calculo da area do retangulo: ");
+		
+		System.out.println("Digite o valor da base do retangulo: ");
+		float base=sc.nextFloat();	
+		
+		System.out.println("Digite o valor da altura do retangulo: ");
+		float altura=sc.nextFloat();	
+		
+		float area= base*altura;
+		
+		System.out.println("o valor da area do retangulo é : "+area);
+		
+		sc.close();
+	}
+
+}
+
+
+
+
+
+
+
+package exemplos;
+
+public class Caneta {
+    
+    // ATRIBUTOS
+    
+    String cor;
+    double ponta;
+    int carga;
+    boolean tampada;
+    
+    
+    //METODO CONSTRUTOR
+    
+    public Caneta(String cor, double p) {
+    	this.carga=100;
+    	this.tampada=true;
+    	this.cor=cor;
+    	this.ponta=p;
+    }
+    
+    // MÉTODOS
+    
+    public void escrever() {
+        if (this.tampada == true)
+            System.out.println("Erro! A caneta está tampada");
+        else
+            System.out.println("Escrevendo");
+    }
+    
+    public void tampar() {
+        this.tampada = true;
+    }
+    
+    public void destampar() {
+        this.tampada = false;
+    }
+    
+    public void estado() {
+        System.out.println("Cor: " + this.cor);
+        System.out.println("Ponta: " + this.ponta);
+        System.out.println("Está tampada? " + this.tampada);
+        System.out.println("A carga está em " + this.carga + "%");
+    }
+}
+
+
+
+
+
+
+
+package exemplos;
+
+public class Carro {
+    
+    // ATRIBUTOS = CARACTERISTICAS
+    private String cor;
+    private String marca;
+    private String modelo;
+    private int ano;
+    private double preco;
+    private int velocidade=0;
+    private boolean ligado;
+    
+    	//METODOS = COMPORTAMENTOS
+    
+    public void ligar()
+    {
+    	if(this.ligado==true)
+    		System.out.println("Erro!!! O carro esta ligado");
+    	else
+    		this.ligado=true;
+    }
+    
+    public void desligar()
+    {
+    	if(this.ligado==false)
+    		System.out.println("Erro!!!! O carro esta desligado");
+    	else
+    		this.ligado=false;
+    }
+    public void acelerar()
+    {
+    	if(this.ligado==false)
+    		System.out.println("Erro! ligue o carro");
+    	else
+    		this.velocidade+=5;  //this.velocidade=this.velocidade+5
+    }
+    
+   public void freiar() {
+    		if(this.velocidade>0)
+    			this.velocidade--;
+    		else
+    			this.velocidade=0;
+}
+   
+ 	//METODOS ACESSORES-GETTERS E
+   //METODOS MODIFICADORES - SETTER
+   
+   
+   public String getCor() {
+		return cor;
+	}
+
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+
+	public String getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+	public int getAno() {
+		return ano;
+	}
+
+	public void setAno(int ano) {
+		this.ano = ano;
+	}
+
+	public double getPreco() {
+		return preco;
+	}
+
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+
+	public int getVelocidade() {
+		return velocidade;
+	}
+   
+   
+	public void estado()
+	{
+		System.out.println("\nA cor do carro e: "+this.cor);
+		System.out.println("A marca e: "+this.marca);
+		System.out.println("O modelo e: "+this.modelo);
+		System.out.println("O ano e: "+this.ano);
+		System.out.println("O valor e: "+this.preco);
+		System.out.println("O carro esta ligado ? "+this.ligado);
+		System.out.println("Qual a velocidade atual ? "+this.velocidade+" km/h");
+		
+    }
+
+	
+}
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class Exercicio11 {
+	
+		//11) uma revendedora de carros usados paga a seus funcionarios vendedores um salario fixo por mes, mais uma comissão 
+		//tambem fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas. escrever um algoritmo que leia o 
+	    //numero de carros por ele vendidos, o valor toral de suas vendas, o salario fixo e o valor que ele recebe por carro vendido, 
+		//calcule e escreva o salario final do vendedor
+	
+		public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o valor do seu salario fixo por mes: R$");
+		float salarioFixo=sc.nextFloat();
+		
+		System.out.println("Digite o valor da sua comissão que recebe por cada carro vendido: RS");
+		float comissaoFixa=sc.nextFloat();
+		
+		System.out.println("Digite a quantidade de carros vendidos no mes: ");
+		float quantidadeCarros=sc.nextFloat();
+		
+		System.out.println("Digite o valor total vendido no mes: ");
+		float valorTotal=sc.nextFloat();
+		
+		
+		float  totalComissao = quantidadeCarros*comissaoFixa;
+		float porcentagemValor= valorTotal*5/100;
+		
+		float valorFinal= salarioFixo+totalComissao+porcentagemValor;
+		
+		System.out.println("O valor final do automovel corresponde a: R$"+valorFinal);
+		
+		sc.close();
+	}
+
+}
+
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class Exercicios09 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+	System.out.println("Digite o seu salario mensal atual : R$");
+	float salario=sc.nextFloat();
+	System.out.println("Digite a porcentagem % de reajustedo seu salario :");
+	float porcentagem = sc.nextFloat();
+	float	aumentoReal = salario* porcentagem / 100;
+	float salarioFinal = aumentoReal+salario;
+	System.out.println("O valor do novo salario é : R$ "+salarioFinal);
+	sc.close();
+	
+		
+	}
+
+}
+
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class IdadeEmDias {
+	
+		//7)faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva
+		//a idade dessa pessoa expressa apenas em dias. considerar ano com 365 dias e mes com 30 dias
+	
+		public static void main(String [] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite a quantidade de anos vividos: ");
+		byte ano=sc.nextByte();	
+		
+		System.out.println("Digite a quantidade de meses vividos depois do seu aniversario: ");
+		byte mes=sc.nextByte();	
+		
+		System.out.println("Digite a quantidade que passou do seu último mesversario:  ");
+		byte dia=sc.nextByte();	
+		
+		int soma1= ano*365;
+		int soma2= mes*30;
+		int soma3= dia;
+		int total=soma1+soma2+soma3;
+		
+		System.out.println("anos : "+ano);
+		System.out.println("meses : "+mes);
+		System.out.println("dias : "+dia);
+		System.out.println("A quantidade de dias vividos é: "+total);
+		
+		sc.close();
+	}
+
+}
+
+
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class IfElse {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite um numero:");
+		int numero = sc.nextInt();
+
+		if (numero == 1) {
+			System.out.println("Domingo");
+		} else if (numero == 2) {
+			System.out.println("Segunda");
+		} else if (numero == 3) {
+			System.out.println("Terça-Feira");
+
+		} else if (numero == 4) {
+			System.out.println("Quarta-Feira");
+
+		} else if (numero == 5) {
+			System.out.println("Quinta-Feira");
+
+		} else if (numero == 6) {
+			System.out.println("Sexta-feira");
+		} else if (numero == 7) {
+			System.out.println("Sabado");
+		} else {
+			System.out.println("Não possui numero correspondente");
+
+			sc.close();
+		}
+
+	}
+
+}
+
+
+
+
+
+
+package exemplos;
+
+import java.util.Scanner;
+
+public class SalarioPercentual {
+	
+		//9)escreva um algoritmo para ler o salario mensal atual de um funcionario  
+		//e o percentual de reajuste. calcular e escrever o valor do novo salario.
+	
+		public static void main(String [] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite seu salario antigo mensal: ");
+		double salario=sc.nextDouble();
+		
+		System.out.println("Digite o percentual de reajuste: ");
+		double reajuste=sc.nextDouble();
+		
+		double reajuste1= 1+ reajuste/100;
+		double salario1= salario*reajuste1;
+		
+		System.out.println("O novo salario sera : "+salario1);
+		
+		sc.close();
+	}
+
+}
+
+
+
+
+
+package exemplos;
+import java.util.Scanner;
+public class IfElseTernario {
+	public static void main(String[] args) {
+
+Scanner sc = new Scanner (System.in);
+
+	System.out.println("Digite um valor :");
+	int valor=sc.nextInt();
+	
+	String saida = (valor%2==0)?"Valor par":"Valor impar";
+	System.out.println(saida);
+	
+
+
+
+
+sc.close();
+	}
+}
+
+
+
+
+
+
+//Desvio condicional Simples
+
+package exemplos;
+import java.util.Scanner;
+public class IfElseEncadeado {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+		
+
+		//Coletendo dados e salvando
+		System.out.println("Digite sua idade:");
+		int idade = sc.nextInt();
+				
+		
+		//mostrando resultados
+		if(idade < 16) {
+			System.out.println("Voce ainda nao pode voltar");
+		} else if(idade < 18) {
+			System.out.println("Voce pode votar, porem é opcional");
+		}else {
+			System.out.println("Voce pode votar");
+				
+
+}
+sc.close();
+}
+}
+
+
+
+
+
+
+package Exemploss;
+import java.util.Scanner;
+public class EnquantoTabuada {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);	
+
+	System.out.println("Digite um numero que deseja saber a sua tabuada :");
+	int numero=sc.nextInt();
+	int contadora=1;
+	while(contadora<11) {
+		System.out.println(numero+"x"+contadora+"="+numero*contadora);
+		contadora++;	
+}
+	
+	
+	
+	
+sc.close();
+}
+}
+
+
+
+
+
+
+package Exemploss;
+public class MostrarImpares {
+public static void main(String[] args) {
+	
+	
+	int contadora=1;
+	
+	System.out.println("Os numeros impares entre (0 e 20) é ");
+	
+	while(contadora<21) {
+		
+		if(contadora%2==1) {
+			System.out.println(contadora);
+		}
+		
+		contadora++;
+
+
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+package Exemploss;
+
+public class While {
+	
+	public static void main(String[] args) {
+		
+		
+		
+			
+		int contadora = 0 ; 
+				
+		while (contadora<8) {
+			System.out.println(contadora);
+			contadora=contadora+1;
+}
+}
+}
+
+
+
+
+
+
+
+package Exemploss;
+import java.util.Scanner;
+public class SomaEnquanto {
+public static void main(String[] args) {
+Scanner leitura = new Scanner (System.in);
+//apresentar o total da soma obtida dos cem primeiros numeros inteiros (1+2+3+4+...+98+99+100).
+
+	int soma=0 ;
+	int contadora=1;
+	while(contadora<101) {
+	soma = soma+contadora;
+	contadora++;
+	System.out.println("A soma dos 100 primeiros numeros possitivos é :"+ soma);
+	
+	
+}
+leitura.close();	
+}
+}
+
+
+
+
+
+
+package Exemplossss;
+
+public class TryCatch {
+	public static void main(String[] args) {
+		try {
+			int data = 100/0;
+			System.out.println(data);
+		}catch(Exception e) {
+			System.out.println("Não é possivel efetuar a divisão por 0");
+			
+		}
+	}
+
+}
+
+
+
+
+
+
+
+package Exemplossss;
+
+public class Temporizador {
+	public static void main(String[] args) throws InterruptedException {
+		
+		for (int i = 0; i < 60; i++) {
+			for(int j = 0;j<60;j++) {
+				System.out.println(i+":"+j);
+				Thread.sleep(2000);
+				
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+package Exemplossss;
+
+import java.util.Scanner;
+
+public class Tempoorizador {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o valor dos minutos");
+		int minutos = sc.nextInt();
+		
+		System.out.println("Digite o valor dos segundos");
+		int segundos = sc.nextInt();
+		
+		try {
+		for(int i = minutos; i >=0;i--) {
+			for(int j =segundos; j >=0; j--) {
+				System.out.println(i+":"+j);
+				Thread.sleep(1000);
+			}
+			segundos=59;
+		}
+		System.out.println("BOOMMMM");
+	}catch(Exception e) {
+		System.out.println("Ele nao esperou 1 segundo");
+	}
+		sc.close();
+}
+}
+
+
+
+
+
+
+
+package Exemplossss;
+
+import java.util.Scanner;
+
+public class ExemploWhileDC {
+
+public static void main(String[] args) {
+
+Scanner sc = new Scanner (System.in);
+
+int x=1, r=0;
+String resp;
+resp="sim";
+
+while (resp.equals("sim")) {
+	System.out.println("Digite um numero:");
+	x=sc.nextInt();
+	r= x*3;
+	System.out.println("A resposta da multiplicação é :"+r);
+	System.out.println("Deseja efetuar outra operação ? :");
+	resp=sc.next();
+	System.out.println(resp);
+}
+sc.close();	
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+package Exemplossss;
+
+public class ExemplosDoWhille {
+	public static void main(String[] args) {
+		int contadora = 0;
+		
+		do {
+			System.out.println(contadora);
+			contadora++;
+			
+		} while (contadora<9);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+package Exemplossss;
+import java.util.Scanner;
+public class ExemploDoWhileDC {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+		
+int x,r;		
+String resp;
+resp="sim";
+do {
+	System.out.println("Digite um valor para ser multiplicado");
+	x=sc.nextInt();
+	r=x*3;
+	System.out.println("A resposta da multiplicação é :"+r);
+	System.out.println("Deseja continuar ?");
+	resp=sc.next();
+	
+}while(resp.equals("sim"));
+		System.out.println("Encerrar Programa");
+		
+		
+		
+		
+		
+		
+		
+		
+sc.close();	
+}
+}
+
+
+
+
+
+
+
+
+
+
+package Exemplossss;
+
+public class Cronoometro {
+	public static void main(String[] args) {
+		try {
+			for (int i = 0; i < 60; i++) {
+				for (int j = 0; i < 60; i++) {
+						System.out.println(i + "i" +j);
+						Thread.sleep(1000);
+					}
+				}
+			}catch(Exception e) {
+				System.out.println("Não foi possivel adicionar um segundo em casa");
+		}
+	}
+
+}
+
+
+
+
+
+
+package Exemplossss;
+
+public class Cronometro {
+	public static void main(String[] args) {
+		
+		for (int i = 0; i < 60; i++) {
+			for(int j = 0;j<60;j++) {
+				System.out.println(i+":"+j);
+			}
+		}
+	}
+
+}
+
+
+
+
+
+package Exercicios;
+
+public class ExemploMatriz {
+
+	public static void main(String[] args) {
+
+		int[][] numero = {{1,2,3,4},{5,6,7}};
+		System.out.println(numero[0][1]);
+
+	}
+
+}
+
+
+
+
+package Exercicios;
+
+public class Exercicio01EstruturaFormaanzano01 {
+	
+	public static void main(String[] args) {
+		
+		for(int i = 15; i <=200; i++) {
+			int quadrado  = i*i;
+			System.out.println("O quadrado de :"+i+"é:"+quadrado);
+			
+		}
+	}
+
+}
+
+
+
+
+
+package Exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio02EstruturaFormaazano01 {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite um numero para saber a tabuada");
+		int valor=sc.nextInt();
+		
+		for(int i = 1; i < 11; i++) {
+			System.out.println(valor + "X"+ i+ "="+valor*i);
+			
+		sc.close();
+		}
+		
+		
+		}
+
+}
+
+
+
+
+
+
+package Exercicios;
+
+public class Exercicio03EstruturaFormaanzano01 {
+	public static void main(String[] args) {
+		int soma = 0;
+		
+		for(int i = 1; i <= 100; i++) {
+			
+			soma= soma+i;
+		}
+		System.out.println("A soma dos valores é igual : "+soma);
+	}
+}
+
+
+
+
+
+
+package Exercicios;
+
+public class Exercicio04EstruturaFormaanzano01 {
+	public static void main(String[] args) {
+		
+		int somatorio = 0;
+		
+		for(int i = 1; i < 501; i++) {
+			if(i % 2 == 0) {
+				somatorio = somatorio + i;
+				
+				System.out.println("O valor total da soma é :" +somatorio);
+			}
+			
+		}
+	}
+}
+
+
+
+
+
+
+
+package Exercicios;
+
+public class Exercicio05EstruturaFormaanzano01 {
+	public static void main(String[] args) {
+	/*	String[] carro = {"Gol","Santana","Fusca","Puma"};
+		System.out.println(carro[0]);
+		carro[3]="Marea";
+		System.out.println(carro[3]);
+	
+		int[] numero = { 12, 3, 5, 6, 7 };
+		System.out.println(numero[4]);
+		System.out.println(numero.length);
+		
+		String [] nome= {"Jailson","André","Rafael","Daniel","Maria"};
+		for (int i = 0; i < nome.length; i++) {
+			System.out.println(nome[i]);
+			*/
+		
+		String [] nome= {"Jailson","André","Rafael","Daniel","Maria","Erick","Socorro"};
+		for(String i :nome) {
+			System.out.println(i);
+		}
+		}
+	}
+
+
+
+
+
+
+
+
+package Exxxxxxxxxxxxxxxxxxxxxxxxxxx;
+
+public interface Controle {
+    void ligar();
+
+    void desligar();
+
+    void aumentarVolume();
+
+    void diminuirVolume();
+    
+    void mudar(double x);
+}
+
+
+
+
+
+
+package Exxxxxxxxxxxxxxxxxxxxxxxxxxx;
+
+		public class ControleApp {
+		public static void main(String[] args) {
+		ControleTV ctv = new ControleTV();
+        ControleRadio cr = new ControleRadio();
+        
+        System.out.println("Dados do controle da tv");
+        System.out.println("TV esta ligada? " +ctv.getLigado());
+        System.out.println("Canal: "+ctv.getCanal());
+        System.out.println("Volume: " +ctv.getVol());
+        
+        System.out.println("\n\nDados do controle do Radio");
+        System.out.println("Radio esta ligado? "+cr.getLigado());
+        System.out.println("Estacao: "+cr.getEstacao());
+        System.out.println("Volume: "+cr.getVol());
+
+
+    }
+}
+
+
+
+
+
+
+
+
+package Exxxxxxxxxxxxxxxxxxxxxxxxxxx;
+
+public class ControleRadio implements Controle {
+    private boolean ligado;
+    private int vol;
+    private double estacao;
+
+    public void ligar() {
+        if (this.ligado == true)
+            System.out.println("Erro! Rádio já está ligado");
+        else
+            this.ligado = true;
+    }
+
+    public boolean getLigado() {
+        return ligado;
+    }
+
+    public int getVol() {
+        return vol;
+    }
+
+    public double getEstacao() {
+        return estacao;
+    }
+
+    public void desligar() {
+        if (this.ligado == true) {
+            this.ligado = false;
+            this.vol = 0;
+            this.estacao = 0;
+        } else
+            System.out.println("Erro! Rádio já está desligado");
+    }
+
+    public void aumentarVolume() {
+        if (this.ligado == true && this.vol < 100)
+            this.vol++;
+        else
+            System.out.println("Erro! Verifique se está ligado ou se o volume está no máximo");
+    }
+
+    public void diminuirVolume() {
+        if (this.ligado == true && this.vol > 0)
+            this.vol--;
+        else
+            System.out.println("Erro! Rádio já está ligado");
+    }
+
+    public void mudar(double x) {
+        // Implemente a lógica para mudar a estação
+    }
+}
+
+
+
+
+
+
+
+
+package Exxxxxxxxxxxxxxxxxxxxxxxxxxx;
+
+public class ControleTV implements Controle {
+    private boolean ligado;
+    private int vol = 5;
+    private int canal;
+
+    public void ligar() {
+        if (this.ligado == true)
+            System.out.println("Erro! A TV já está ligada");
+        else
+            this.ligado = true;
+    }
+
+    public boolean getLigado() {
+        return ligado;
+    }
+
+    public int getVol() {
+        return vol;
+    }
+
+    public int getCanal() {
+        return canal;
+    }
+
+    public void desligar() {
+        if (this.ligado == true) {
+            this.ligado = false;
+            this.vol = 0;
+            this.canal = 0;
+        } else
+            System.out.println("Erro! A TV já está desligada");
+    }
+
+    public void aumentarVolume() {
+        if (this.ligado == true && this.vol < 100)
+            this.vol++;
+        else
+            System.out.println("Erro! Verifique se a TV está ligada ou se o volume está no limite");
+    }
+
+    public void diminuirVolume() {
+        if (this.ligado == true && this.vol > 0)
+            this.vol--;
+        else
+            System.out.println("Erro! Verifique se a TV está ligada ou se o volume está no mínimo");
+    }
+
+    public void mudar(double x) {
+        // Implemente a lógica para mudar de canal ou estação
+    }
+}
+
+
+
+
+
+
+
+
+
+package Heranca;
+
+public class Poupanca extends ContaCorrente{
+	
+	public void sacar(double valor)
+	{
+		this.saldo=this.saldo-valor;
+	}
+
+}
+
+
+
+
+
+package Heranca;
+
+public class ContaEspecial extends ContaCorrente{
+	
+	public void sacar(double valor)
+	{
+		double taxa=valor*0.001;
+		this.saldo=this.saldo-valor-taxa;
+	}
+
+}
+
+
+
+
+
+
+package Heranca;
+
+public class ContaCorrente {
+	private String nome;
+	private String numConta;
+	protected double saldo=0;
+	
+	public void depositar(double valor)
+	{
+		this.saldo=this.saldo+valor;
+	}
+	public double verSaldo()
+	{
+		return this.saldo;
+		
+	}
+	public void sacar (double valor)
+	{
+		double taxa=valor*0.05;
+		this.saldo=this.saldo-valor-taxa;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getNumConta() {
+		return numConta;
+	}
+	public void setNumConta(String numConta) {
+		this.numConta = numConta;
+	}
+
+}
+
+
+
+
+package Polimorfismo;
+
+public class ExemploSobrecarga {
+	public static void main(String[] args) {
+		Sobrecarga s = new Sobrecarga();
+		Sobrecarga s1 = new Sobrecarga(55.7);
+		System.out.println("O valor de s é: "+s.getValor());
+		System.out.println("O valor de s1 é: "+s1.getValor());
+		s.soma();
+		System.out.println("A soma é: " +s.getValor());
+		s.soma(3.5);
+		System.out.println("A soma é: "+s.getValor());
+		s.soma(666);
+		System.out.println("A soma é: "+s.getValor());
+		s.soma(55.4, 22);
+		System.out.println("A soma é: "+s.getValor());
+		s.soma(12, 50.4);
+		System.out.println("A soma é: "+s.getValor());
+		s.soma(19, 5.0);
+		System.out.println("A soma é: "+s.getValor());
+		s.soma(33, 22, 11);
+		System.out.println("A soma é: "+s.getValor());
+	}
+}
+
+
+
+
+
+
+
+package Polimorfismo;
+
+public class Sobrecarga {
+	
+	private double valor=0.0;
+	
+	public Sobrecarga()
+	{
+		this.valor=15;
+	}
+	public Sobrecarga(double n1)
+	{
+		this.valor=23+n1;
+	}
+	
+	public void soma()
+	{
+		this.valor=5+3;
+	}
+	public void soma(int n1)
+	{
+		this.valor=5.0+n1;
+	}
+	public void soma(double n1)
+	{
+		this.valor=5+n1;
+	}
+	public void doms(int n1, int n2)
+	{
+		this.valor=n1+n2;
+	}
+	public void soma(int n1, double n2)
+	{
+		this.valor=n1+n2;
+	}
+	public void soma(double n1, int n2)
+	{
+		this.valor=n1+n2;
+	}
+	public void soma(int n1, int n2, int n3)
+	{
+		this.valor= n1 + n2 + n3;
+	}
+	public double getValor() {
+		return valor;
+	}
+}
+
+
+
+
+
+
+package Tabuada;
+
+import java.util.Scanner;
+
+public class Tabuada {
+
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+	
+System.out.println("Digite um numero para saber a tabuada:");
+int numero=sc.nextInt();
+int contadora=1;
+while(contadora<11) {
+System.out.println(numero+ " X " +contadora + " = " + numero*contadora);
+contadora++;
+
+
+
+sc.close();
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
