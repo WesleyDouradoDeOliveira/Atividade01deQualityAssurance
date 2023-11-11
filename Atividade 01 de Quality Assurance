@@ -1,0 +1,150 @@
+1) Defina com suas palavras o que você entende por quality assurance?
+A garantia de qualidade, para mim, é como garantir que tudo fique nos trilhos quando se trata da qualidade de um produto ou serviço. É um conjunto de práticas e processos que visa evitar problemas, garantir que tudo esteja conforme os requisitos e, no final das contas, entregar algo que funcione bem e satisfaça as expectativas. É meio como ter um "guardião da qualidade" para garantir que tudo esteja nos conformes.
+
+
+2) Explique por que não devemos equiparar "Testes de softwares" com "Quality Assurance".
+É importante não confundir “Testes de Software” com “Garantia de Qualidade” porque, embora os testes sejam uma parte crucial da garantia de qualidade, o QA abrange um escopo mais amplo. Os testes de software são focados principalmente na detecção de defeitos, enquanto o QA engloba todo o processo, desde a prevenção de problemas até a implementação de práticas e processos para garantir a qualidade em todas as fases do desenvolvimento. Em outras palavras, os testes são uma peça do quebra-cabeça, enquanto QA é o quadro completo que visa garantir a qualidade em todos os aspectos.
+
+
+3) Explique com suas palavras o que é teste de software.
+O teste de software é basicamente uma verificação minuciosa de um programa ou sistema para ter certeza de que tudo está nos conformes. É como dar uma boa olhada em cada parte do código, clique em todos os botões possíveis e tente fazer o sistema "quebrar" de alguma forma. O objetivo é encontrar bugs, garantir que o software atenda aos requisitos e, no final das contas, entregar algo que funcione como deveria. É tipo um detetive do mundo digital, procurando pistas de problemas escondidos.
+
+
+4) Explique com suas palavras o que é controle de qualidade.
+O controle de qualidade é feito por meio do inspetor-chefe da produção, garantindo que tudo esteja nos conformes. É um conjunto de atividades planejadas e sistemáticas para ter certeza de que o produto ou serviço atende aos padrões de qualidade estabelecidos. Envolvemos revisões, inspeções, testes e outros métodos para identificar e corrigir problemas antes que o produto final seja entregue. Em resumo, é o cuidado extra para garantir que o que oferecemos seja top de linha e atenda a todas as expectativas de qualidade.
+
+
+5) Explique com suas palavras as diferenças entre teste de software, controle de qualidade e quality assurance.
+O teste de software é feito pelo "investigador" que examina o sistema em busca de falhas específicas. É tipo apertar todos os botões, tentar fazer o sistema "quebrar" para encontrar bugs.
+Agora, o controle de qualidade é mais como o “inspetor-chefe”, cuidando para garantir que o produto final atenda aos padrões. Envolva revisões, inspeções e testes para solucionar problemas antes que o produto seja entregue.
+Por fim, garantia de qualidade (QA) é o “guardião geral” da qualidade. Envolve todo o processo, desde a prevenção de problemas até a implementação de práticas para garantir a qualidade em todas as etapas. É como ter um plano abrangente para ter certeza de que tudo está nos trilhos. Resumindo, teste encontra problemas específicos, controle de qualidade cuida do produto final, e QA é o plano geral para garantir que tudo seja top de linha.
+
+
+6) Defina com suas palavras o que é bootcamp. Você acredita que essa metodologia de ensino auxilia o aluno a aprender?
+Bootcamp é como um mergulho intenso de aprendizado, geralmente de curta duração, focado em ensinar habilidades práticas para uma área específica, seja programação, design, ou qualquer coisa assim. Eu acho que sim, é uma metodologia que pode ser super útil. Como é bem imersivo e prático, meio que você joga na piscina das habilidades que você precisa aprender. Pode ser desafiador, mas muita gente gosta da abordagem rápida e prática que os bootcamps oferecem.
+
+
+7) Defina com suas palavras o que é Roadmap?
+O roadmap é tipo o “mapa de viagem” do projeto. É um plano estratégico que lista todas as paradas importantes ao longo do caminho. Ele mostra metas, marcos e os passos necessários para chegar lá. É tipo o GPS do projeto, garantindo que todos estejam na mesma página sobre o que precisa ser feito e quando. É uma maneira de manter as coisas organizadas e todas na direção certa.
+
+
+8) Faça uma pesquisa completa e monte um roadmap com a finalidade de auxiliar uma pessoa que está com desejo de iniciar na area de Q.A.
+Então, primeiro, seria legal começar com os conceitos básicos de QA, entender o que é e como funciona. Depois, a partir dos fundamentos dos testes de software, tipos de testes e as ferramentas mais usadas.
+Portanto, é interessante se aprofundar na automação de testes, porque isso é tipo a cereja do bolo em QA. Pode-se olhar também para metodologias ágeis, porque muitas equipes de QA trabalham dentro desses frameworks.
+Além disso, soft skills são sempre importantes, então desenvolver habilidades de comunicação, trabalho em equipe e resolução de problemas será muito útil.
+E, claro, nunca para de aprender! A área de QA está sempre evoluindo, então é bom ficar de olho nas novas tendências e tecnologias. Boa sorte na jornada de QA!
+
+
+9) Defina com suas palavras o que são softs skills.
+Soft skills são as habilidades mais sociais e interpessoais que as pessoas usam no dia a dia, sabia? É como ser bom na comunicação, trabalhar em equipe, ser empático, ter boa capacidade de resolução de conflitos e essas coisinhas que fazem a convivência ser mais tranquila. São super importantes no mundo profissional, ajudar a construir boas relações e lidar melhor com as situações do dia a dia no trabalho.
+
+
+10) Defina com suas palavras o que são hards kills.
+Hard skills são meio que habilidades mais técnicas, sabia? Tipo, são aqueles que as pessoas podem aprender através de treinamento e prática específica. Em QA, seriam coisas como conhecimento em automação de testes, entender de programação, manjar das ferramentas de teste essas habilidades mais específicas para a área em que as pessoas trabalham. É tipo o lado mais técnico e prático das habilidades, diferente das soft skills que são mais sociais e interpessoais.
+
+
+11) Quais são as softs skills necessárias para atuar na área de Q.A.?
+Na área de QA, soft skills são super importantes! Primeiro, a comunicação é fundamental, porque a gente precisa explicar os bugs e os resultados dos testes de uma forma que todo mundo entende. Trabalhar em equipe também é essencial, já que as pessoas geralmente fazem parte de uma equipe maior de desenvolvimento. Atenção aos detalhes é outra, porque a gente precisa identificar até os problemas mais sutis. Além disso, ser adaptável e ter boa capacidade de resolução de problemas é sempre útil, porque, vamos ser sinceros, nem tudo no mundo do QA segue um roteiro certinho. Ah, e paciência, porque às vezes encontrar bugs pode ser do tipo procurar agulha no palheiro, né? Então, essas são algumas habilidades sociais importantes por aqui.
+
+
+12) Quais são as hards skills necessárias para atuar na área de Q.A.?
+Em QA a coisa é um pouco mais técnica. Automatizar testes é uma baita habilidade, tipo saber criar scripts e usar ferramentas para agilizar o processo. Conhecimento em metodologias de teste também é importante, porque isso orienta a forma como as pessoas abordam os testes. Programação é uma mão na roda, mesmo que não seja um especialista, entendo bastante a ajuda básica. E, claro, familiaridade com as ferramentas de teste mais usadas no mercado é sempre um diferencial. É meio que essa combinação de habilidades que fazem a mágica acontecer no mundo do QA.
+
+
+13) Porque o Q.A. necessita possuir um olhar comercial sobre os projetos que trabalham?
+O lance do olhar comercial em QA é entender que o que a gente faz não é só sobre encontrar bugs ou testar funcionalidades. É sobre como a qualidade do que estamos testando diretamente sobre o sucesso do negócio. Se as pessoas entregam um produto de alta qualidade, os clientes ficam satisfeitos, e isso impacta positivamente nos resultados da empresa. Ter essa visão mais ampla ajuda a alinhar o trabalho de QA com os objetivos comerciais, porque no final das contas, a qualidade do software não é apenas uma questão técnica, é uma peça chave para o sucesso da empresa como um todo. É tipo ser o guardião da qualidade, não só do código, mas do negócio em si.
+
+
+14) Explique com suas palavras o que ocorre durante o processo de compilação.
+O processo de compilação é meio que a mágica que transforma nosso código-fonte em algo que o computador entende e executa. Quando a gente escreve código, tá tudo em linguagem que a gente entende, né? Mas o computador não manja nada disso. Então, durante a compilação, o compilador pega nosso código-fonte, verifica se está tudo certo, traduz isso para a linguagem de máquina, e cria um programa incluídovel. É o tipo de momento em que nosso código ganha vida e se transforma em algo que o computador pode rodar. Isso é crucial para garantir que nosso software funcione como deveria. Se rolar algum erro nesse processo, pode gerar aqueles bugs e problemas famosos na execução do programa. Resumindo, é uma etapa em que nosso código se transforma em algo que o computador pode entender e executar.
+
+
+15)Qual dos seguintes é um tipo primitivo em Java? 
+e) Booleano
+
+
+16) Qual palavra-chave é usada para declarar uma classe em Java? 
+b) aula
+
+
+17)Qual dos seguintes operadores é usado para realizar a divisão inteira em Java?
+b)%
+
+
+18)O que é um método em Java? 
+c) Um conjunto de instruções que executa uma tarefa específica 
+19)Qual é a diferença entre um método estático e um método de instância em Java? 
+a) Um método estático pode ser chamado diretamente na classe, enquanto um método de instância requer uma instância da classe para ser chamado.
+
+20)Qual dos seguintes é um exemplo de um laço de repetição em Java? 
+c) for 
+
+21)O que é um construtor em Java? 
+e) Um método especial usado para inicializar objetos em Java. 
+
+22)Qual é a diferença entre um array unidimensional e um array multidimensional em Java? 
+c) Um array unidimensional pode ter apenas uma dimensão, enquanto um array multidimensional pode ter duas ou mais dimensões. 
+
+23)Qual é a saída deste código Java? 
+b) 2.0 
+
+24)Qual das seguintes opções define corretamente o Java? 
+a) Uma linguagem de programação orientada a objetos. 
+
+25)O Java é uma linguagem compilada ou interpretada? 
+c) Híbrida (compilada e interpretada). 
+
+26)Qual das seguintes opções é a correta definição de um método em Java? 
+c) Um bloco de código que executa uma ação específica. 
+
+27)Qual é o ponto de entrada de um programa Java? 
+b) O método "main()". 
+
+28)Qual das seguintes opções é a correta sintaxe para a declaração de uma variável em Java? 
+d) Todas as alternativas anteriores estão corretas. 
+
+29)Qual é a diferença entre uma variável primitiva e uma variável de referência em Java? 
+b) Variáveis primitivas armazenam diretamente o valor, enquanto variáveis de referência armazenam uma referência ao objeto. 
+
+30)Qual é o operador utilizado para atribuição de valor em Java? 
+a) = 
+
+31)Qual é a diferença entre "==" e ".equals()" em Java? 
+a) "==" é utilizado para comparar valores primitivos, enquanto ".equals()" é utilizado para comparar objetos. 
+
+32)O que é uma exceção em Java? 
+c) Um objeto que representa um erro ou uma condição excepcional. 
+
+33)O que é o conceito de herança em Java? 
+c) É a capacidade de uma classe ser estendida por outras classes. 
+
+34)Qual é a principal finalidade da linguagem de programação Java? 
+e) Criar aplicações de software de propósito geral 
+
+35)Qual é o principal princípio da linguagem Java? 
+c) Portabilidade 
+
+36)O que é um objeto em Java? 
+b) Uma estrutura de dados que armazena informações 
+
+37)Qual é a função do método main() em um programa Java? 
+d) Iniciar a execução do programa 
+
+38)Qual é a sintaxe correta para declarar uma variável em Java? 
+b) int variableName; 
+
+39)O que é um array em Java? 
+d) Uma estrutura de dados que armazena múltiplos valores do mesmo tipo 
+
+40)O que é o conceito de herança em Java? 
+d) Um mecanismo para reutilizar características de uma classe em outra classe 
+
+41)O que é uma exceção em Java? 
+e) Um evento que ocorre durante a execução do programa e requer tratamento especial 
+
+42)Qual é a forma correta de criar um objeto em Java? 
+e) ObjectName = new ObjectName(); 
+
+43)O que é um método em Java? 
+c) Uma função que executa uma ação específica 
+
