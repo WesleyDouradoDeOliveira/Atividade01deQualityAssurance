@@ -73,78 +73,105 @@ b)%
 
 18)O que é um método em Java? 
 c) Um conjunto de instruções que executa uma tarefa específica 
+
+
 19)Qual é a diferença entre um método estático e um método de instância em Java? 
 a) Um método estático pode ser chamado diretamente na classe, enquanto um método de instância requer uma instância da classe para ser chamado.
+
 
 20)Qual dos seguintes é um exemplo de um laço de repetição em Java? 
 c) for 
 
+
 21)O que é um construtor em Java? 
 e) Um método especial usado para inicializar objetos em Java. 
+
 
 22)Qual é a diferença entre um array unidimensional e um array multidimensional em Java? 
 c) Um array unidimensional pode ter apenas uma dimensão, enquanto um array multidimensional pode ter duas ou mais dimensões. 
 
+
 23)Qual é a saída deste código Java? 
 b) 2.0 
+
 
 24)Qual das seguintes opções define corretamente o Java? 
 a) Uma linguagem de programação orientada a objetos. 
 
+
 25)O Java é uma linguagem compilada ou interpretada? 
 c) Híbrida (compilada e interpretada). 
+
 
 26)Qual das seguintes opções é a correta definição de um método em Java? 
 c) Um bloco de código que executa uma ação específica. 
 
+
 27)Qual é o ponto de entrada de um programa Java? 
 b) O método "main()". 
+
 
 28)Qual das seguintes opções é a correta sintaxe para a declaração de uma variável em Java? 
 d) Todas as alternativas anteriores estão corretas. 
 
+
 29)Qual é a diferença entre uma variável primitiva e uma variável de referência em Java? 
 b) Variáveis primitivas armazenam diretamente o valor, enquanto variáveis de referência armazenam uma referência ao objeto. 
+
 
 30)Qual é o operador utilizado para atribuição de valor em Java? 
 a) = 
 
+
 31)Qual é a diferença entre "==" e ".equals()" em Java? 
 a) "==" é utilizado para comparar valores primitivos, enquanto ".equals()" é utilizado para comparar objetos. 
+
 
 32)O que é uma exceção em Java? 
 c) Um objeto que representa um erro ou uma condição excepcional. 
 
+
 33)O que é o conceito de herança em Java? 
 c) É a capacidade de uma classe ser estendida por outras classes. 
+
 
 34)Qual é a principal finalidade da linguagem de programação Java? 
 e) Criar aplicações de software de propósito geral 
 
+
 35)Qual é o principal princípio da linguagem Java? 
 c) Portabilidade 
+
 
 36)O que é um objeto em Java? 
 b) Uma estrutura de dados que armazena informações 
 
+
 37)Qual é a função do método main() em um programa Java? 
 d) Iniciar a execução do programa 
+
 
 38)Qual é a sintaxe correta para declarar uma variável em Java? 
 b) int variableName; 
 
+
 39)O que é um array em Java? 
 d) Uma estrutura de dados que armazena múltiplos valores do mesmo tipo 
+
 
 40)O que é o conceito de herança em Java? 
 d) Um mecanismo para reutilizar características de uma classe em outra classe 
 
+
 41)O que é uma exceção em Java? 
 e) Um evento que ocorre durante a execução do programa e requer tratamento especial 
+
 
 42)Qual é a forma correta de criar um objeto em Java? 
 e) ObjectName = new ObjectName(); 
 
+
 43)O que é um método em Java? 
 c) Uma função que executa uma ação específica 
+
 
