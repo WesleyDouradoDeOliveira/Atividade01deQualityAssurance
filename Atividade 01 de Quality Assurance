@@ -6,7 +6,7 @@ package TesteDeSoftwareQA;
 	
 	import java.util.Scanner;
 
-	public class Atividade {
+	public class Atividade1 {
 
 	    public static void main(String[] args) {
 	        Scanner scanner = new Scanner(System.in);
@@ -50,7 +50,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade2 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -79,7 +79,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade3 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -109,7 +109,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade4 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -148,7 +148,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade5 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -186,7 +186,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade6 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -213,7 +213,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade7 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -242,7 +242,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade8 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -275,7 +275,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade9 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -314,7 +314,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade10 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -342,7 +342,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade11 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -374,7 +374,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade12 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -404,7 +404,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade13 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -434,7 +434,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade14 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -466,7 +466,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade15 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -492,7 +492,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade16 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -521,7 +521,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade17 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -554,7 +554,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade18 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -586,7 +586,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade19 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -622,7 +622,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade20 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -649,7 +649,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade21 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -690,7 +690,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade22 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -722,7 +722,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade23 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -777,7 +777,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade24 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -821,7 +821,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade25 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -848,7 +848,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade26 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -898,7 +898,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade27 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -929,7 +929,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade28 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -974,7 +974,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade29 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1005,7 +1005,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade30 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1039,7 +1039,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade31 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1069,7 +1069,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade32 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1107,7 +1107,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade33 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1148,7 +1148,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade34 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1177,7 +1177,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade35 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1216,7 +1216,9 @@ public class Atividade {
 
 package TesteDeSoftwareQA;
 
-public class ExibirNumeros {
+import java.util.Scanner;
+
+public class Atividade36 {
 
     public static void main(String[] args) {
         // Usando um loop for para exibir os números de 1 a 10
@@ -1231,7 +1233,7 @@ public class ExibirNumeros {
 
 package TesteDeSoftwareQA;
 
-public class SomaNumeros {
+public class Atividade37 {
 
     public static void main(String[] args) {
         int soma = 0;
@@ -1251,7 +1253,7 @@ public class SomaNumeros {
 
 package TesteDeSoftwareQA;
 
-public class Atividade {
+public class Atividade38 {
 
     public static void main(String[] args) {
         // Usando um loop for para exibir os números pares de 1 a 50
@@ -1268,7 +1270,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade39 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1302,7 +1304,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade40 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1328,7 +1330,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade41 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1365,7 +1367,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade42 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1406,7 +1408,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade43 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1439,7 +1441,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade44 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1474,7 +1476,7 @@ public class Atividade {
 
 package TesteDeSoftwareQA;
 
-public class Atividade {
+public class Atividade45 {
 
     public static void main(String[] args) {
         // Exibe os primeiros 20 números da sequência de Fibonacci
@@ -1498,7 +1500,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade46 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1534,7 +1536,7 @@ public class Atividade {
 
 package TesteDeSoftwareQA;
 
-public class Atividade {
+public class Atividade47 {
 
     public static void main(String[] args) {
         // Usando um loop for para exibir os números ímpares de 50 a 1
@@ -1550,7 +1552,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade48 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1580,7 +1582,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade49 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1618,7 +1620,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade50 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1657,7 +1659,7 @@ public class Atividade {
 
 package TesteDeSoftwareQA;
 
-public class Atividade {
+public class Atividade51 {
 
     public static void main(String[] args) {
         // Inicializa a variável de controle
@@ -1675,7 +1677,7 @@ public class Atividade {
 
 package TesteDeSoftwareQA;
 
-public class Atividade {
+public class Atividade52 {
 
     public static void main(String[] args) {
         // Inicializa a variável de controle e a variável para armazenar a soma
@@ -1697,7 +1699,7 @@ public class Atividade {
 
 package TesteDeSoftwareQA;
 
-public class Atividade {
+public class Atividade53 {
 
     public static void main(String[] args) {
         // Inicializa a variável de controle
@@ -1717,7 +1719,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade54 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1751,7 +1753,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade55 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1781,7 +1783,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade56 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1820,7 +1822,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade57 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1868,7 +1870,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade58 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1912,7 +1914,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade59 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -1947,7 +1949,7 @@ public class Atividade {
 
 package TesteDeSoftwareQA;
 
-public class Atividade {
+public class Atividade60 {
 
     public static void main(String[] args) {
         // Inicializa variáveis
@@ -1975,7 +1977,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade61 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -2014,7 +2016,7 @@ public class Atividade {
 
 package TesteDeSoftwareQA;
 
-public class Atividade {
+public class Atividade62 {
 
     public static void main(String[] args) {
         // Inicializa a variável de controle
@@ -2034,7 +2036,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade63 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -2075,7 +2077,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade64 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -2116,7 +2118,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class Atividade {
+public class Atividade65 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
