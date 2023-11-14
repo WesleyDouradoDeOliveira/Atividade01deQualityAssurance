@@ -6,7 +6,7 @@ package TesteDeSoftwareQA;
 	
 	import java.util.Scanner;
 
-	public class atv1 {
+	public class Atividade {
 
 	    public static void main(String[] args) {
 	        Scanner scanner = new Scanner(System.in);
@@ -50,7 +50,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class atv2 {
+public class Atividade {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -79,7 +79,7 @@ package TesteDeSoftwareQA;
 
 import java.util.Scanner;
 
-public class atv1 {
+public class Atividade {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
