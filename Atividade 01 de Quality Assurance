@@ -1,2724 +1,2159 @@
-package Atividade;
-public class Animal {
-	private double altura;
-	private double peso;
-	public void reproduzir()
-	{
-		System.out.println("O animal esta reproduzindo");
-	}
+Exercícios de Lógica de Programação em JavaScript e Java.
 
-	public double getAltura() {
-		return altura;
-	}
+(1) Faça um programa que solicite dois números inteiros e exiba a soma, subtração, multiplicação e divisão entre eles.
 
-	public void setAltura(double altura) {
-		this.altura = altura;
-	}
-
-	public double getPeso() {
-		return peso;
-	}
-
-	public void setPeso(double peso) {
-		this.peso = peso;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-package Atividade;
-public class Atum extends Peixe {
-	public void comerAlga() {
-		System.out.println("Fazendo dieta");
-	}
-}
-
-
-
-
-
-
-
-
-
-package Atividade;
-public class Cachorro extends Mamifero{
-	public void abanarRabo() {
-		System.out.println("Cachorro feliz!!!");
-	}
+package TesteDeSoftwareQA;
 	
-	public void emitirSom() {
-		System.out.println("Latindo! Au! Au! Au!");
-	}
-}
+	import java.util.Scanner;
 
+	public class atv1 {
 
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
 
+	        // Solicita dois números inteiros do usuário
+	        System.out.print("Digite o primeiro número inteiro: ");
+	        int numero1 = scanner.nextInt();
 
+	        System.out.print("Digite o segundo número inteiro: ");
+	        int numero2 = scanner.nextInt();
 
+	        // Realiza as operações matemáticas
+	        int soma = numero1 + numero2;
+	        int subtracao = numero1 - numero2;
+	        int multiplicacao = numero1 * numero2;
 
+	        // Verifica se o segundo número é diferente de zero antes de fazer a divisão
+	        double divisao = 0;
+	        if (numero2 != 0) {
+	            divisao = (double) numero1 / numero2;
+	        } else {
+	            System.out.println("Não é possível dividir por zero.");
+	            // Encerra o programa se a divisão por zero for detectada
+	            System.exit(0);
+	        }
 
+	        // Exibe os resultados
+	        System.out.println("Soma: " + soma);
+	        System.out.println("Subtração: " + subtracao);
+	        System.out.println("Multiplicação: " + multiplicacao);
+	        System.out.println("Divisão: " + divisao);
 
-
-
-package Atividade;
-public class Cavalo extends Mamifero{
-	public void trotar() {
-		System.out.println("o cavalo esta trotando");
-	}
-	
-public void emitirSom()
-{
-	System.out.println("");
-}
-}
-
-
-
-
-
-
-
-
-package Atividade;
-public class Exercicio1Heranca {
-	@SuppressWarnings("unused")
-	public static void main(String[] args) {
-		Animal an = new Animal();
-		Peixe p = new Peixe();
-		Mamifero m = new Mamifero();
-		Tubarao t = new Tubarao();
-		Atum at = new Atum();
-		Cavalo cav = new Cavalo();
-		Cachorro cac = new Cachorro();
-	}
-}
-
-
-
-
-
-
-
-
-
-package Atividade;
-public class Mamifero extends Animal{
-	private String corPelo;
-	private String comprimento;//curto, comprido, sem pelo
-	public void amamentar()
-	{
-		System.out.println("Animal mamando");
+	        // Fecha o scanner
+	        scanner.close();
+	    }
 	}
 
-	public String getCorPelo() {
-		return corPelo;
-	}
+(2) Escreva um programa que leia o raio de um círculo e calcule sua área e perímetro.
 
-	public void setCorPelo(String corPelo) {
-		this.corPelo = corPelo;
-	}
+package TesteDeSoftwareQA;
 
-	public String getComprimento() {
-		return comprimento;
-	}
-
-	public void setComprimento(String comprimento) {
-		this.comprimento = comprimento;
-	}
-}
-
-
-
-
-
-
-
-
-
-package Atividade;
-public class Peixe extends Animal{
-	private String corEscama;
-	private int numBarbatana;
-	public void respirarEmbaixoDagua()
-	{
-		System.out.println("Peixe respirando!!! glub glub glub");
-	}
-
-	public String getCorEscama() {
-		return corEscama;
-	}
-
-	public void setCorEscama(String corEscama) {
-		this.corEscama = corEscama;
-	}
-
-	public int getNumBarbatana() {
-		return numBarbatana;
-	}
-
-	public void setNumBarbatana(int numBarbatana) {
-		this.numBarbatana = numBarbatana;
-	}
-}
-
-
-
-
-
-
-package Atividade;
-public class Tubarao extends Peixe{
-	public void comerCarne() {
-		System.out.println("Tubarao comendo poutros animais");
-	}
-
-}
-
-
-
-
-
-
-
-
-
-package CaixaEletronico;
 import java.util.Scanner;
-public class CaixaEletronico {
-    private static double saldo = 1000; // Exemplo de saldo inicial
+
+public class atv2 {
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        boolean continuar = true;
-        while (continuar) {
-            exibirMenu();
-            int opcao = sc.nextInt();
-            switch (opcao) {
-                case 1:
-                    consultarSaldo();
-                    break;
-                case 2:
-                    realizarSaque();
-                    break;
-                case 3:
-                    realizarDeposito();
-                    break;
-                case 4:
-                    System.out.println("Obrigado por usar o Caixa Eletrônico. Até a próxima!");
-                    continuar = false;
-                    break;
-                default:
-                    System.out.println("Opção inválida. Tente novamente.");
-                    break;
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o raio do círculo
+        System.out.print("Digite o raio do círculo: ");
+        double raio = scanner.nextDouble();
+
+        // Calcula a área e o perímetro do círculo
+        double area = Math.PI * Math.pow(raio, 2);
+        double perimetro = 2 * Math.PI * raio;
+
+        // Exibe os resultados
+        System.out.println("Área do círculo: " + area);
+        System.out.println("Perímetro do círculo: " + perimetro);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+
+(3) Crie um programa que leia a base e a altura de um triângulo e calcule sua área.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class atv1 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita a base e a altura do triângulo
+        System.out.print("Digite a base do triângulo: ");
+        double base = scanner.nextDouble();
+
+        System.out.print("Digite a altura do triângulo: ");
+        double altura = scanner.nextDouble();
+
+        // Calcula a área do triângulo
+        double area = (base * altura) / 2;
+
+        // Exibe o resultado
+        System.out.println("Área do triângulo: " + area);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+
+(4) Faça um programa que receba três notas de um aluno (cada nota de 0 a 10) e calcule a média ponderada considerando pesos 2, 3 e 5 para as notas, respectivamente.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita as três notas do aluno
+        System.out.print("Digite a primeira nota (de 0 a 10): ");
+        double nota1 = scanner.nextDouble();
+
+        System.out.print("Digite a segunda nota (de 0 a 10): ");
+        double nota2 = scanner.nextDouble();
+
+        System.out.print("Digite a terceira nota (de 0 a 10): ");
+        double nota3 = scanner.nextDouble();
+
+        // Verifica se as notas estão dentro do intervalo permitido
+        if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || nota3 < 0 || nota3 > 10) {
+            System.out.println("Por favor, digite notas válidas entre 0 e 10.");
+            // Encerra o programa se alguma nota estiver fora do intervalo
+            System.exit(0);
+        }
+
+        // Calcula a média ponderada
+        double mediaPonderada = (nota1 * 2 + nota2 * 3 + nota3 * 5) / (2 + 3 + 5);
+
+        // Exibe a média ponderada
+        System.out.println("Média Ponderada: " + mediaPonderada);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(5) Escreva um programa que leia o preço de um produto e a quantidade comprada, e calcule o valor total a ser pago com desconto de 10% se a quantidade for maior que 10 unidades.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o preço do produto
+        System.out.print("Digite o preço do produto: ");
+        double preco = scanner.nextDouble();
+
+        // Solicita a quantidade comprada
+        System.out.print("Digite a quantidade comprada: ");
+        int quantidade = scanner.nextInt();
+
+        // Calcula o valor total
+        double valorTotal;
+
+        if (quantidade > 10) {
+            // Aplica desconto de 10% se a quantidade for maior que 10 unidades
+            valorTotal = preco * quantidade * 0.9;
+        } else {
+            // Sem desconto se a quantidade for 10 unidades ou menos
+            valorTotal = preco * quantidade;
+        }
+
+        // Exibe o valor total a ser pago
+        System.out.println("Valor total a ser pago: " + valorTotal);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(6) Crie um programa que leia um número inteiro e exiba se ele é par ou ímpar.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita um número inteiro
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        // Verifica se o número é par ou ímpar
+        if (numero % 2 == 0) {
+            System.out.println("O número é par.");
+        } else {
+            System.out.println("O número é ímpar.");
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(7) Faça um programa que receba o salário base de um funcionário e calcule o seu salário líquido, considerando que o funcionário recebe 5% de comissão sobre o salário base.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o salário base do funcionário
+        System.out.print("Digite o salário base do funcionário: ");
+        double salarioBase = scanner.nextDouble();
+
+        // Calcula a comissão (5% do salário base)
+        double comissao = 0.05 * salarioBase;
+
+        // Calcula o salário líquido (salário base + comissão)
+        double salarioLiquido = salarioBase + comissao;
+
+        // Exibe o salário líquido
+        System.out.println("O salário líquido do funcionário é: " + salarioLiquido);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(8) Escreva um programa que leia dois números inteiros e troque os seus valores, ou seja, o primeiro deve ficar com o valor do segundo e vice-versa.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita os dois números inteiros
+        System.out.print("Digite o primeiro número inteiro: ");
+        int numero1 = scanner.nextInt();
+
+        System.out.print("Digite o segundo número inteiro: ");
+        int numero2 = scanner.nextInt();
+
+        // Troca os valores dos números
+        int temp = numero1;
+        numero1 = numero2;
+        numero2 = temp;
+
+        // Exibe os números trocados
+        System.out.println("Após a troca:");
+        System.out.println("Primeiro número: " + numero1);
+        System.out.println("Segundo número: " + numero2);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(9) Crie um programa que leia o valor do depósito mensal em uma poupança e a taxa de juros mensal, e calcule o montante após 12 meses.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o valor do depósito mensal
+        System.out.print("Digite o valor do depósito mensal: ");
+        double depositoMensal = scanner.nextDouble();
+
+        // Solicita a taxa de juros mensal (em porcentagem)
+        System.out.print("Digite a taxa de juros mensal (em porcentagem): ");
+        double taxaJurosMensal = scanner.nextDouble();
+
+        // Converte a taxa de juros para a forma decimal
+        taxaJurosMensal /= 100.0;
+
+        // Inicializa o montante com zero
+        double montante = 0;
+
+        // Calcula o montante após 12 meses
+        for (int i = 0; i < 12; i++) {
+            montante += depositoMensal;
+            montante *= (1 + taxaJurosMensal);
+        }
+
+        // Exibe o montante após 12 meses
+        System.out.println("O montante após 12 meses é: " + montante);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(10) Faça um programa que leia um número inteiro e exiba a sua tabuada de multiplicação até o décimo valor.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita um número inteiro
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        // Exibe a tabuada de multiplicação até o décimo valor
+        System.out.println("Tabuada de multiplicação para o número " + numero + ":");
+
+        for (int i = 1; i <= 10; i++) {
+            int resultado = numero * i;
+            System.out.println(numero + " x " + i + " = " + resultado);
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(11) Escreva um programa que calcule a média aritmética entre três números reais inseridos pelo usuário.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita três números reais
+        System.out.print("Digite o primeiro número real: ");
+        double numero1 = scanner.nextDouble();
+
+        System.out.print("Digite o segundo número real: ");
+        double numero2 = scanner.nextDouble();
+
+        System.out.print("Digite o terceiro número real: ");
+        double numero3 = scanner.nextDouble();
+
+        // Calcula a média aritmética
+        double media = (numero1 + numero2 + numero3) / 3;
+
+        // Exibe a média aritmética
+        System.out.println("A média aritmética dos números é: " + media);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(12) Crie um programa que leia o peso e a altura de uma pessoa e exiba o seu Índice de Massa Corporal (IMC).
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o peso da pessoa
+        System.out.print("Digite o peso (em kg): ");
+        double peso = scanner.nextDouble();
+
+        // Solicita a altura da pessoa
+        System.out.print("Digite a altura (em metros): ");
+        double altura = scanner.nextDouble();
+
+        // Calcula o Índice de Massa Corporal (IMC)
+        double imc = peso / (altura * altura);
+
+        // Exibe o IMC
+        System.out.println("O Índice de Massa Corporal (IMC) é: " + imc);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(13) Faça um programa que leia dois números inteiros e verifique se o primeiro é múltiplo do segundo.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita dois números inteiros
+        System.out.print("Digite o primeiro número inteiro: ");
+        int numero1 = scanner.nextInt();
+
+        System.out.print("Digite o segundo número inteiro: ");
+        int numero2 = scanner.nextInt();
+
+        // Verifica se o primeiro número é múltiplo do segundo
+        if (numero2 != 0 && numero1 % numero2 == 0) {
+            System.out.println(numero1 + " é múltiplo de " + numero2);
+        } else {
+            System.out.println(numero1 + " não é múltiplo de " + numero2);
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(14) Escreva um programa que leia a idade de uma pessoa em anos, meses e dias, e calcule quantos dias de vida ela tem.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita a idade da pessoa em anos, meses e dias
+        System.out.print("Digite a idade em anos: ");
+        int anos = scanner.nextInt();
+
+        System.out.print("Digite a idade em meses: ");
+        int meses = scanner.nextInt();
+
+        System.out.print("Digite a idade em dias: ");
+        int dias = scanner.nextInt();
+
+        // Calcula o total de dias de vida
+        int totalDias = anos * 365 + meses * 30 + dias;
+
+        // Exibe o total de dias de vida
+        System.out.println("A pessoa tem aproximadamente " + totalDias + " dias de vida.");
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(15) Crie um programa que leia o salário de um funcionário e calcule o novo salário com um aumento de 15%.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o salário do funcionário
+        System.out.print("Digite o salário do funcionário: ");
+        double salario = scanner.nextDouble();
+
+        // Calcula o novo salário com um aumento de 15%
+        double novoSalario = salario * 1.15;
+
+        // Exibe o novo salário
+        System.out.println("O novo salário do funcionário com aumento de 15% é: " + novoSalario);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(16) Faça um programa que verifique se um número é positivo, negativo ou zero.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita um número
+        System.out.print("Digite um número: ");
+        double numero = scanner.nextDouble();
+
+        // Verifica se o número é positivo, negativo ou zero
+        if (numero > 0) {
+            System.out.println("O número é positivo.");
+        } else if (numero < 0) {
+            System.out.println("O número é negativo.");
+        } else {
+            System.out.println("O número é zero.");
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(17) Escreva um programa que leia a idade de uma pessoa e exiba uma mensagem indicando se ela é criança, adolescente, adulto ou idoso.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita a idade da pessoa
+        System.out.print("Digite a idade da pessoa: ");
+        int idade = scanner.nextInt();
+
+        // Verifica a faixa etária
+        if (idade < 0) {
+            System.out.println("Idade inválida.");
+        } else if (idade <= 12) {
+            System.out.println("Criança.");
+        } else if (idade <= 17) {
+            System.out.println("Adolescente.");
+        } else if (idade <= 59) {
+            System.out.println("Adulto.");
+        } else {
+            System.out.println("Idoso.");
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(18) Crie um programa que leia dois números inteiros e exiba o maior deles.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita dois números inteiros
+        System.out.print("Digite o primeiro número inteiro: ");
+        int numero1 = scanner.nextInt();
+
+        System.out.print("Digite o segundo número inteiro: ");
+        int numero2 = scanner.nextInt();
+
+        // Verifica e exibe o maior número
+        if (numero1 > numero2) {
+            System.out.println("O maior número é: " + numero1);
+        } else if (numero2 > numero1) {
+            System.out.println("O maior número é: " + numero2);
+        } else {
+            System.out.println("Os números são iguais.");
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(19) Faça um programa que receba três notas de um aluno e exiba se ele foi aprovado ou reprovado. A média para aprovação é 7.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita as três notas do aluno
+        System.out.print("Digite a primeira nota: ");
+        double nota1 = scanner.nextDouble();
+
+        System.out.print("Digite a segunda nota: ");
+        double nota2 = scanner.nextDouble();
+
+        System.out.print("Digite a terceira nota: ");
+        double nota3 = scanner.nextDouble();
+
+        // Calcula a média das notas
+        double media = (nota1 + nota2 + nota3) / 3;
+
+        // Verifica se o aluno foi aprovado ou reprovado
+        if (media >= 7) {
+            System.out.println("Aluno aprovado! Média: " + media);
+        } else {
+            System.out.println("Aluno reprovado. Média: " + media);
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(20) Escreva um programa que leia um número inteiro e exiba se ele é par ou ímpar.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita um número inteiro
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        // Verifica se o número é par ou ímpar
+        if (numero % 2 == 0) {
+            System.out.println("O número é par.");
+        } else {
+            System.out.println("O número é ímpar.");
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(21) Crie um programa que leia a idade de um grupo de pessoas e exiba quantas são menores de idade e quantas são maiores de idade.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o número total de pessoas no grupo
+        System.out.print("Digite o número total de pessoas no grupo: ");
+        int totalPessoas = scanner.nextInt();
+
+        // Inicializa contadores para menores e maiores de idade
+        int menoresDeIdade = 0;
+        int maioresDeIdade = 0;
+
+        // Loop para inserir a idade de cada pessoa
+        for (int i = 1; i <= totalPessoas; i++) {
+            System.out.print("Digite a idade da pessoa " + i + ": ");
+            int idade = scanner.nextInt();
+
+            // Verifica se a pessoa é menor ou maior de idade
+            if (idade < 18) {
+                menoresDeIdade++;
+            } else {
+                maioresDeIdade++;
             }
         }
 
-        sc.close();
+        // Exibe o resultado
+        System.out.println("Número de pessoas menores de idade: " + menoresDeIdade);
+        System.out.println("Número de pessoas maiores de idade: " + maioresDeIdade);
+
+        // Fecha o scanner
+        scanner.close();
     }
-
-    private static void exibirMenu() {
-        System.out.println("\nCaixa Eletrônico Braços Curtos \n da Unipaulistana");
-        System.out.println("1 - Consultar Saldo");
-        System.out.println("2 - Saque");
-        System.out.println("3 - Depósito");
-        System.out.println("4 - Sair");
-        System.out.println("Digite a opção desejada:");
-    }
-
-    private static void consultarSaldo() {
-        System.out.println("Seu saldo atual é: R$" + saldo);
-    }
-
-    private static void realizarSaque() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Digite o valor que deseja sacar: ");
-        double valorSaque = sc.nextDouble();
-
-        if (valorSaque > 0 && valorSaque <= saldo) {
-            saldo -= valorSaque;
-            System.out.println("Saque realizado com sucesso. Novo saldo: R$" + saldo);
-        } else {
-            System.out.println("Valor inválido ou saldo insuficiente.");
-            sc.close();
-        }
-    }
-
-    private static void realizarDeposito() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Digite o valor que deseja depositar: ");
-        double valorDeposito = sc.nextDouble();
-
-        if (valorDeposito > 0) {
-            saldo += valorDeposito;
-            System.out.println("Depósito realizado com sucesso. Novo saldo: R$" + saldo);
-        } else {
-            System.out.println("Valor inválido para depósito.");
-            sc.close();
-        }
-    } 
 }
 
+(22) Faça um programa que receba o salário de um funcionário e exiba o valor do seu bônus. Se o salário for maior que R$ 2000, o bônus é de 10%, caso contrário, é de 5%.
 
+package TesteDeSoftwareQA;
 
+import java.util.Scanner;
 
+public class Atividade {
 
-
-
-
-
-package Clases4;
-public class Carro implements Veiculo {
-	private String marca;
-	private String modelo;
-	public String getMarca() {
-		return marca;
-	}
-	public void setMarca(String marca) {
-		this.marca = marca;
-	}
-	public String getModelo() {
-		return modelo;
-	}
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
-	}
-	public int getVelocidade() {
-		return velocidade;
-	}
-	public int getMarcha() {
-		return marcha;
-	}
-	public boolean isLigado() {
-		return ligado;
-	}
-
-	private int velocidade;
-	private int marcha;
-	private boolean ligado;
-	@Override
-	public void ligar() {
-		if(ligado==false && marcha==0)
-			this.ligado=true;
-		else
-			System.out.println("Erro! Verifique a marcha e se o carro ja esta ligado");
-		
-	}
-	@Override
-	public void desligar() {
-		if(ligado==true && marcha==0 && velocidade==0)
-			this.ligado=false;
-		else
-			System.out.println("Erro! Verifique a marcha se o carro esta desligado e parado");
-		
-	}
-	@Override
-	public void acelerar() {
-		if(ligado==true && marcha!=0)
-			this.velocidade++;
-	else
-		System.out.println("Erro! Verifique a marcha e se o carro esta ligado");
-		
-	}
-	@Override
-	public void frear() {
-		if(ligado==true && velocidade>0)
-			this.velocidade--;
-		else
-			System.out.println("Erro! Verifique a velocidade e se o carro esta ligado" );
-		
-	}
-
-	@Override
-	public String TrocaMarcha() {
-	this.marcha++;
-	return marca;
-
-	}
-	public String getLigado() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	public void trocarMarcha() {
-		// TODO Auto-generated method stub	
-	}
-}
-	
-	
-
-
-
-
-
-
-
-
-package Clases4;
-public class Interface1 {
     public static void main(String[] args) {
-        // Criando um objeto da classe Carro
-        Carro c1 = new Carro();
-        Moto m1 = new Moto();
-        System.out.println("Mostrando o estado inicial do carro\n");
-        System.out.println("A marca do carro é: " + c1.getMarca());
-        System.out.println("O modelo do carro é: " + c1.getModelo());
-        System.out.println("O carro está ligado? " + c1.getLigado());
-        System.out.println("A marcha atual é: " + c1.getMarcha());
-        System.out.println("A velocidade atual é: " + c1.getVelocidade());
-        c1.setMarca("Honda");
-        c1.setModelo("Civic");
-        c1.ligar();
-        c1.trocarMarcha();
-        c1.acelerar();
-        System.out.println("\nMostrando o estado do carro depois das alterações\n");
-        System.out.println("A marca do carro é: " + c1.getMarca());
-        System.out.println("O modelo do carro é: " + c1.getModelo());
-        System.out.println("O carro está ligado? " + c1.getLigado());
-        System.out.println("A marcha atual é: " + c1.getMarcha());
-        System.out.println("A velocidade atual é: " + c1.getVelocidade() + "km/h");
-        // Configurando o estado inicial da moto
-        m1.setMarca("Yamaha");
-        m1.setModelo("YZF");
-        m1.ligar();
-        m1.TrocaMarcha();
-        m1.acelerar();
-        System.out.println("\nMostrando o estado inicial da moto\n");
-        System.out.println("A marca da moto é: " + m1.getMarca());
-        System.out.println("O modelo da moto é: " + m1.getModelo());
-        System.out.println("A moto está ligada? " + m1.getLigado());
-        System.out.println("A marcha atual é: " + m1.getMarca());
-        System.out.println("A velocidade atual é: " + m1.getVelocidade() + "km/h");
-    }
-}
+        Scanner scanner = new Scanner(System.in);
 
+        // Solicita o salário do funcionário
+        System.out.print("Digite o salário do funcionário: ");
+        double salario = scanner.nextDouble();
 
+        // Calcula o bônus com base nas condições dadas
+        double bonus;
 
-
-
-
-
-
-
-package Clases4;
-public class Moto implements Veiculo {
-    private String marca;
-    private String modelo;
-    private int velocidade;
-    private int marcha;
-    private boolean ligado;
-    @Override
-    public void ligar() {
-        if (!ligado && velocidade == 0) {
-            ligado = true;
+        if (salario > 2000) {
+            bonus = salario * 0.10;  // Bônus de 10% para salários acima de R$ 2000
         } else {
-            System.out.println("Erro ao ligar a moto");
+            bonus = salario * 0.05;  // Bônus de 5% para salários de R$ 2000 ou menos
         }
-    }
 
-    @Override
-    public void desligar() {
-        if (ligado && velocidade == 0) {
-            ligado = false;
-        } else {
-            System.out.println("Erro ao desligar a moto");
-        }
-    }
+        // Exibe o valor do bônus
+        System.out.println("O valor do bônus é: R$" + bonus);
 
-    @Override
-    public void acelerar() {
-        if (ligado && marcha > 0) {
-            velocidade += 3;
-        } else {
-            System.out.println("Problema na aceleração");
-        }
-    }
-
-    @Override
-    public void frear() {
-        if (ligado && velocidade > 0) {
-            velocidade -= 3;
-        } else {
-            System.out.println("Problema na frenagem");
-        }
-    }
-
-    @Override
-    public String TrocaMarcha() {
-        if (ligado && velocidade > 0) {
-            marcha++;
-        } else {
-            System.out.println("Problema na troca de marcha");
-        }
-        return "Marcha atual: " + marcha;
-    }
-
-	public String getMarca() {
-		return marca;
-	}
-
-	public void setMarca(String marca) {
-		this.marca = marca;
-	}
-
-	public String getModelo() {
-		return modelo;
-	}
-
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
-	}
-
-	public String getLigado() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public String getVelocidade() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-}
-
-
-
-
-
-
-
-package Clases4;
-public interface Veiculo {
-	public abstract void ligar();
-	public abstract void desligar();
-	    public abstract void acelerar();
-	    public abstract void frear();
-	    public abstract String TrocaMarcha();
-
-	}
-
-
-
-
-
-
-
-
-
-package Encapsulamento;
-public class Bomba {
-	    private String combustivel;
-	    private double preco;
-	    private double qtd;
-	    private boolean ligada;
-	    public void ligar()
-	    {
-	    	if(ligada==true)
-	    		System.out.println("A bomba ja esta ligada");
-	    	else
-	    		this.ligada=true;
-	    }
-	    public String getCombustivel() {
-			return combustivel;
-		}
-		public void setCombustivel(String combustivel) {
-			this.combustivel = combustivel;
-		}
-		public double getPreco() {
-			return preco;
-		}
-		public void setPreco(double preco) {
-			this.preco = preco;
-		}
-		public double getQtd() {
-			return qtd;
-		}
-		public void setQtd(double qtd) {
-			this.qtd = qtd;
-		}
-		public boolean isLigada() {
-			return ligada;
-		}
-		public void desligar()
-	    {
-	    		if(ligada==true)
-	    			this.ligada=false;
-	    		else
-	    			System.out.println("A bomba ja esta desligada");
-	    }
-	    
-	    public double valorTotal() {
-	    	return this.preco*this.qtd;
-	    }
-	}
-
-
-
-
-
-
-
-package Encapsulamento;
-public class Exercicio2 {
-	public static void main(String[] args) {
-		Bomba b1 = new Bomba();
-		b1.setCombustivel("Etanol");
-		b1.setPreco(3.17);
-		b1.setQtd(30);
-		System.out.println("O tipo de combustivel é: "+b1.getCombustivel());
-		System.out.println("O total a pagar é: "+b1.valorTotal());
-	}
-
-}
-
-
-
-
-
-
-
-
-package Encapsulamento;
-public interface InterRadio {
-	public abstract void ligar ();
-	public abstract void desligar();
-	public abstract void maisvolume();
-	public abstract void menosvolume();
-	public abstract void trocarestacao();
-	public abstract void mudo();
-	
-
-
-}
-
-
-
-
-
-
-
-
-
-package Encapsulamento;
-public interface InterRelogio {
-	public abstract void ajustarHora(int h);
-	public abstract void ajustarMinuto(int m);
-	public abstract void mostrarHora( );
-	public abstract void ligarAlarme(int h, int m);
-	public abstract void desligarAlarme();
-}
-
-
-
-
-
-
-
-
-	package Encapsulamento;
-	public class Radio implements InterRadio{
-	//ATRIBUTOS
-	private int vol;
-	private Boolean ligado;
-	public int getVol() {
-		return vol;
-	}
-	public Boolean getLigado() {
-		return ligado;
-	}
-		////////////////////////////////////////////////////
-		public void ligar() {
-		if(this.ligado==true)
-			System.out.println("O radio ja esta ligado");
-		else {
-			this.ligado=true;
-			this.vol=5;
-		}
-	}
-	/////////////////////////////////////////////////////
-	public void desligar() {
-		if(this.ligado==false)
-			System.out.println("O radio ja esta desligado");
-		else 
-			this.ligado=false;
-	}
-	@Override
-	public void maisvolume() {
-		// TODO Auto-generated method stub
-	}
-	@Override
-	public void menosvolume() {
-		// TODO Auto-generated method stub
-	}
-    /////////////////////////////////////////////////////
-	public void trocarestacao() {
-		if(this.ligado==false)
-			System.out.println("Trocando a estação...");
-		else 
-			System.out.println("O radio esta desligado");
-	}
-	/////////////////////////////////////////////////////
-	
-	public void mudo() {
-		this.vol=0;
-	/////////////////////////////////////////////////////	
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-package Encapsulamento;
-public class RadioRelogio implements InterRadio, InterRelogio {
-    private int vol;
-    private int hora;
-    private int minuto;
-    @Override
-    public void ajustarHora(int h) {
-        if (h >= 0 && h < 24) {
-            this.hora = h;
-        } else {
-            System.out.println("Hora inválida");
-        }
-    }
-
-    @Override
-    public void ajustarMinuto(int m) {
-        if (m >= 0 && m < 60) {
-            this.minuto = m;
-        } else {
-            System.out.println("Minuto inválido");
-        }
-    }
-
-    @Override
-    public void mostrarHora() {
-        System.out.println(this.hora + ":" + this.minuto);
-    }
-
-    @Override
-    public void ligarAlarme(int h, int m) {
-        System.out.println("Alarme ligado para " + h + ":" + m);
-    }
-
-    @Override
-    public void desligarAlarme() {
-        System.out.println("Alarme desligado");
-    }
-
-    @Override
-    public void ligar() {
-        System.out.println("O rádio está ligado");
-    }
-
-    @Override
-    public void desligar() {
-        System.out.println("O rádio está desligado");
-    }
-
-    @Override
-    public void maisvolume() {
-        if (this.vol < 10) {
-            this.vol++;
-            System.out.println("Volume aumentado para " + this.vol);
-        } else {
-            System.out.println("Volume no máximo");
-        }
-    }
-
-    @Override
-    public void menosvolume() {
-        if (this.vol > 0) {
-            this.vol--;
-            System.out.println("Volume diminuído para " + this.vol);
-        } else {
-            System.out.println("Volume no mínimo");
-        }
-    }
-
-    @Override
-    public void trocarestacao() {
-        // Implementação para trocar de estação de rádio
-        System.out.println("Estação de rádio trocada");
-    }
-
-    @Override
-    public void mudo() {
-        this.vol = 0;
-        System.out.println("Som mudo");
+        // Fecha o scanner
+        scanner.close();
     }
 }
 
+(23) Escreva um programa que leia o nome de um mês e exiba a quantidade de dias que ele possui. Considere apenas meses válidos.
 
+package TesteDeSoftwareQA;
 
-
-
-
-
-
-
-package Encapsulamento;
-public class Relogio implements InterRelogio{
-	private int hora;
-	private int minuto;
-	private int horaAlarme;
-	private int minutosAlarme;
-	@Override
-	public void ajustarHora(int h) {
-		if(h>0 && h<=12)
-			this.hora=h;
-		else
-			System.out.println("Valor invalido...");
-	}
-	@Override
-	public void ajustarMinuto(int m) {
-		if(m>=0 && m<60)
-			this.minuto=m;
-		else
-			System.out.println("Valor invalido...");
-	}
-	@Override
-	public void mostrarHora() {
-		System.out.println("São " +this.hora+" horas e "+this.minuto+" minutos");
-	}
-	@Override
-	public void ligarAlarme(int h, int m) {
-		this.horaAlarme=h;
-		this.minutosAlarme=m;
-	}
-	@Override
-	public void desligarAlarme() {
-		System.out.println("Alarme desligado");	
-	}
-	public int getHoraAlarme() {
-		return horaAlarme;
-	}
-	public int getMinutosAlarme() {
-		return minutosAlarme;
-	}
-}
-
-
-
-
-
-
-
-package Encapsulamentoo;
-import herança.Pessoa;
-public class Aluno extends Pessoa {
-		public Aluno(String pnome, String pcpf, int pidade) {
-		super(pnome, pcpf, pidade);
-	}
-		private int ra;
-		private double media;
-
-		public void entregarTarefa() {
-			System.out.println("Tarefa entregue com sucesso");
-		}
-		public int getRa() {
-			return ra;
-		}
-		public void setRa(int ra) {
-			this.ra = ra;
-		}
-		public double getMedia() {
-			return media;
-		}
-		public void setMedia(double media) {
-			this.media = media;
-		}
-	}
-
-
-
-
-package Encapsulamentoo;
-import herança.Pessoa;
-public class ExemploEranca {
-	public static void main(String[] args) {
-		new Pessoa (null, null, 0);
-		new Professor(null, null, 0);
-	}
-}
-
-
-
-
-
-
-
-
-
-
-package Encapsulamentoo;
-public abstract class  Pessoa {
-	protected String nome;
-	protected String telefone;
-	protected String endereco;
-	protected String email;
-	protected int idade=0;
-	public void aniversario()
-	{
-		this.idade++;
-	}
-	
-	public String getNome() {
-		return nome;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-package Encapsulamentoo;
-import herança.Pessoa;
-public class Professor extends Pessoa{	
-		public Professor(String pnome, String pcpf, int pidade) {
-		super(pnome, pcpf, pidade);
-		// TODO Auto-generated constructor stub
-	}
-		private String disciplina;
-		private double salario=0;
-		public void aumentoSalario(double x)
-		{
-			this.salario+=x;//=> this.salario=this.salario+x
-		}
-		public String getDisciplina() {
-			return disciplina;
-		}
-		public void setDisciplina(String disciplina) {
-			this.disciplina = disciplina;
-		}
-		public double getSalario() {
-			return salario;
-		}
-		public void setSalario(double salario) {
-			this.salario = salario;
-		}
-	}
-
-
-
-
-
-
-
-
-package exemplos;
 import java.util.Scanner;
-public class RestodaDivisao {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite um numero:");
-		int numero = sc.nextInt();
-		if (numero == 1) {
-			System.out.println("Domingo");
-		} else if (numero == 2) {
-			System.out.println("Segunda");
-		} else if (numero == 3) {
-			System.out.println("Terça-Feira");
-		} else if (numero == 4) {
-			System.out.println("Quarta-Feira");
-		} else if (numero == 5) {
-			System.out.println("Quinta-Feira");
-		} else if (numero == 6) {
-			System.out.println("Sexta-feira");
-		} else if (numero == 7) {
-			System.out.println("Sabado");
-		} else {
-			System.out.println("Não possui numero correspondente");
 
-			sc.close();
-		}
-	}
-}
+public class Atividade {
 
-
-
-
-
-
-package exemplos;
-import java.util.Scanner;
-public class Meses {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite um numero:");
-		int numero = sc.nextInt();
-		if (numero == 1) {
-			System.out.println("Janeiro");
-		} else if (numero == 2) {
-			System.out.println("Fevereiro");
-		} else if (numero == 3) {
-			System.out.println("março");
-		} else if (numero == 4) {
-			System.out.println("Abril");
-		} else if (numero == 5) {
-			System.out.println("Maio");
-		} else if (numero == 6) {
-			System.out.println("Junho");
-		} else if (numero == 7) {
-			System.out.println("Julho");
-		} else if (numero == 8) {
-			System.out.println("Agosto");
-		} else if (numero == 9) {
-			System.out.println("Setembro");
-		} else if (numero == 10) {
-			System.out.println("Outubro");
-		} else if (numero == 11) {
-			System.out.println("Novembro");
-		} else if (numero == 12) {
-			System.out.println("Dezembro");
-		} else {
-			System.out.println("Não possui numero correspondente");
-			sc.close();
-		}
-	}
-}
-
-
-
-
-
-
-
-
-package exemplos;
-import java.util.Scanner;
-public class VendasCarro {
-		//11) uma revendedora de carros usados paga a seus funcionarios vendedores um salario fixo por mes, mais uma comissão 
-		//tambem fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas. escrever um algoritmo que leia o 
-	        //numero de carros por ele vendidos, o valor toral de suas vendas, o salario fixo e o valor que ele recebe por carro vendido, 
-		//calcule e escreva o salario final do vendedor
-		public static void main(String [] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite o numero de carros vendidos: ");
-		double carros=sc.nextDouble();
-		System.out.println("Digite o valor total das vendas: ");
-		double vendas=sc.nextDouble();
-		System.out.println("Digite o salario fixo: ");
-		double salario=sc.nextDouble();
-		System.out.println("Digite o valor por cada carro vendido: ");
-		double valor=sc.nextDouble();
-		double comissãocarros= carros*valor;
-		double comissãovendas= 0.05 * vendas;
-		double salariofinal= salario+comissãovendas+comissãocarros;
-		System.out.println("O novo salario sera : "+salariofinal);
-		sc.close();
-	}
-}
-
-
-
-
-
-
-
-		package exemplos;
-		import java.util.Scanner;
-		public class UrnaEleicao {
-    	public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Digite a quantidade total de eleitores do municipío : ");
-        float quantidadeTotalEleitores= sc.nextFloat();
-        System.out.println("Digite a quantidade de votos brancos do municipío : ");
-        int quantidadeVotosBrancos= sc.nextInt();
-        //Processamento
-        float porcentagemVotosBrancos = quantidadeVotosBrancos/quantidadeTotalEleitores*100;
-        //Saída
-        System.out.println("A porcentagem de votos brancos corresponde a : "+porcentagemVotosBrancos + "%");
-		sc.close();
-    }
-}
-
-
-
-
-
-
-
-
-
-
-package exemplos;
-import java.util.Scanner;
-public class SwitchCase {
-public static void main(String[] args) {
-Scanner sc=new Scanner(System.in);
-	System.out.println("Digite um numero : ");
-	int numero = sc.nextInt();
-	switch(numero) {
-	case 1:
-	System.out.println("Domingo");
-	break;
-	case 2:
-	System.out.println("Segunda");
-	break;
-	case 3:
-	System.out.println("Terça");
-	break;
-	case 4:
-	System.out.println("Quarta");
-	break;
-	case 5:
-	System.out.println("Quinta");
-	break;
-	case 6:
-	System.out.println("Sexta");
-	break;
-	case 7:
-	System.out.println("Sabado");
-	break;
-	default:
-		System.out.println("Não possui dia correspondente");
-	break;	
-}
-sc.close();
-}
-}
-
-
-
-
-
-
-
-
-
-
-package exemplos;
-import java.util.Scanner;
-public class Subtracao {
-		public static void main(String [] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite o primeiro valor inteiro :");
-		int valor1= sc.nextInt();
-		System.out.println("Digite o segundo valor inteiro");
-		int valor2=sc.nextInt();
-		int subtracao=valor1-valor2;
-		System.out.println("O valor da subtracao é : "+subtracao);
-		sc.close();
-	}
-}
-
-
-
-
-
-
-
-package exemplos;
-import java.util.Scanner;
-public class SomaDigite {
-		public static void main(String [] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite o primeiro valor inteiro: ");
-		int valor1=sc.nextInt();
-		System.out.println("Digite o segundo valor inteiro: ");
-		int valor2=sc.nextInt();
-		int soma= valor1+valor2;
-		System.out.println("O valor da soma correnponde a : "+soma);
-		sc.close();
-	}
-}
-
-
-
-
-
-
-package exemplos;
-import java.util.Scanner;
-public class Exercicio10 {
-	public static void main(String[]args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite o valor do custo de fabricação do automovel : R$");
-		float valorAutomovel = sc.nextFloat();
-		float distribuidor = valorAutomovel*28/100;
-		float imposto = valorAutomovel*45/100;
-		float valorFinal = valorAutomovel+distribuidor+imposto;
-		System.out.println("O valor final do automovel corresponde a : R$"+valorFinal);
-		sc.close();
-	}
-}
-
-
-
-
-
-
-
-package exemplos;
-public class Exercicio1 {
-	public static void main(String[] args) {
-		Carro uno = new Carro();
-		double valorDolar;
-		uno.setCor("amarelo");
-		System.out.println("A cor do carro é: "+uno.getCor());
-		uno.setAno(95);
-		System.out.println("O ano do carro é: "+uno.getAno());
-		uno.setPreco(10000);
-		System.out.println("O valor do carro e: "+uno.getPreco());
-		valorDolar=uno.getPreco()/5;
-		System.out.println("O valor do carro em Dolar é: "+valorDolar);
-		uno.estado();
-		uno.setMarca("FIAT");
-		uno.setModelo("Uno Mille 1.5s");
-		System.out.println("A marca do carro é: "+uno.getMarca());
-		System.out.println("O modelo do carro é: "+uno.getModelo());
-	}
-}
-
-
-
-
-
-
-
-
-
-//Desvio condicional Simples
-package exemplos;
-import java.util.Scanner;
-public class ExemploIfElse01 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);	
-		System.out.println("Digite sua idade:");
-		int idade = sc.nextInt();		
-		if(idade < 16) {
-			System.out.println("Voce ainda nao pode voltar");
-		} else {
-			System.out.println("Voce pode votar");
-		}
-		sc.close();
-	}
-}
-
-
-
-
-
-
-//Desvio condicional Simples
-package exemplos;
-import java.util.Scanner;
-public class ExemploIF {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite um numero:");
-		int idade = sc.nextInt();		
-		if(idade < 12) {
-			System.out.println("Voce ainda é uma criança");			
-		}
-		sc.close();
-	}
-}
-
-
-
-
-
-
-
-package exemplos;
-import java.util.Scanner;
-public class Divisão {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);		
-		System.err.println("Digite um numero");
-		int numero=sc.nextInt();
-		System.err.println("Digite um numero");
-		int numero1=sc.nextInt();
-		float divisao=numero/numero1;	
-		System.out.printf("A divisão é : %.3f" ,divisao);
-		sc.close();
-	}
-}
-
-
-
-
-
-
-
-package exemplos;
-import java.util.Scanner;
-public class Divisao {
-		public static void main(String [] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite o primeiro valor inteiro: ");
-		double valor1=sc.nextDouble();
-		System.out.println("Digite o segundo valor inteiro: ");
-		double valor2=sc.nextDouble();
-		double soma= valor1/valor2;
-		System.out.println("O valor da soma correnponde a : "+soma);
-		sc.close();
-	}
-}
-
-
-
-
-
-
-
-
-package exemplos;
-import java.util.Scanner;
-public class CustoCarro {
-	
-		//10) o custo de um carro novo ao consumidor é a soma do custo de fabrica com a porcentagem do distribuidor e dos impostos
-		//(aplicados ao custo de fabrica).supondo que o percentual do distribuidor seja de 28% e os impostos de 45%. escrever um algoritmo
-	        //para ler o custo de fabrica de um carro, calcular e escrever o custo final ao consumidor
-		public static void main(String [] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite o custo de fabricação do carro: ");
-		double fabricacao=sc.nextDouble();
-		//definindo as porcentagens %%%%%
-		double distribuidor = 0.28;
-		double impostos = 0.45;
-        // Calcular o custo do distribuidor
-        double custoDistribuidor = fabricacao * distribuidor;
-        // Calcular o custo dos impostos
-        double impostos1 = fabricacao * impostos;
-        // Calcular o custo final ao consumidor
-        double custoFinal = fabricacao + custoDistribuidor + impostos1;
-		System.out.println("O custo do carro de fabrica é : "+custoFinal);
-		sc.close();
-	}
-}
-
-
-
-
-
-
-package exemplos;
-public class CarroCaneta {
     public static void main(String[] args) {
-        // Criar uma instância de Carro
-        Carro meuCarro = new Carro();
-        // Exibir o estado inicial do carro
-        meuCarro.estado();
-        // Ligar o carro
-        meuCarro.ligar();
-        // Acelerar o carro
-        meuCarro.acelerar();
-        // Exibir o estado do carro após ligar e acelerar
-        meuCarro.estado();
-        // Criar uma instância de Caneta
-        Caneta minhaCaneta = new Caneta("Azul", 0.7);
-        // Exibir o estado inicial da caneta
-        minhaCaneta.estado();
-        // Destampar a caneta
-        minhaCaneta.destampar();
-        // Escrever com a caneta
-        minhaCaneta.escrever();
-        // Exibir o estado da caneta após destampar e escrever
-        minhaCaneta.estado();
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o nome do mês
+        System.out.print("Digite o nome do mês: ");
+        String nomeMes = scanner.nextLine().toLowerCase(); // Converte para minúsculas para evitar problemas de comparação
+
+        // Verifica a quantidade de dias do mês
+        int diasNoMes = 0;
+
+        switch (nomeMes) {
+            case "janeiro":
+            case "março":
+            case "maio":
+            case "julho":
+            case "agosto":
+            case "outubro":
+            case "dezembro":
+                diasNoMes = 31;
+                break;
+
+            case "abril":
+            case "junho":
+            case "setembro":
+            case "novembro":
+                diasNoMes = 30;
+                break;
+
+            case "fevereiro":
+                diasNoMes = 28; // Não considerando ano bissexto
+                break;
+
+            default:
+                System.out.println("Mês inválido.");
+                // Fecha o scanner
+                scanner.close();
+                return;
+        }
+
+        // Exibe a quantidade de dias do mês
+        System.out.println("O mês de " + nomeMes + " possui " + diasNoMes + " dias.");
+
+        // Fecha o scanner
+        scanner.close();
     }
 }
 
+(24) Crie um programa que leia três números inteiros e exiba-os em ordem crescente.
 
+package TesteDeSoftwareQA;
 
-
-
-
-
-package exemplos;
 import java.util.Scanner;
-public class Sucessor {
-		//5)escreva um algoritimo para ler um valor(so teclado) e escrever (na tela) o seu Sucessor
-		public static void main(String [] args) {	
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite um numero para aparecer o Sucessor: ");
-		int valor1=sc.nextInt();
-		int sucessor= valor1+1;
-		System.out.println("O Sucessor é  : "+sucessor);
-		sc.close();
-	}
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita três números inteiros
+        System.out.print("Digite o primeiro número inteiro: ");
+        int numero1 = scanner.nextInt();
+
+        System.out.print("Digite o segundo número inteiro: ");
+        int numero2 = scanner.nextInt();
+
+        System.out.print("Digite o terceiro número inteiro: ");
+        int numero3 = scanner.nextInt();
+
+        // Cria um array com os três números
+        int[] numeros = {numero1, numero2, numero3};
+
+        // Ordena os números em ordem crescente usando o algoritmo bubble sort
+        for (int i = 0; i < numeros.length - 1; i++) {
+            for (int j = 0; j < numeros.length - 1 - i; j++) {
+                if (numeros[j] > numeros[j + 1]) {
+                    // Troca os números se estiverem fora de ordem
+                    int temp = numeros[j];
+                    numeros[j] = numeros[j + 1];
+                    numeros[j + 1] = temp;
+                }
+            }
+        }
+
+        // Exibe os números em ordem crescente
+        System.out.println("Números em ordem crescente: " + numeros[0] + ", " + numeros[1] + ", " + numeros[2]);
+
+        // Fecha o scanner
+        scanner.close();
+    }
 }
 
+(25) Faça um programa que leia o número de faltas de um aluno em uma disciplina e exiba sua situação. Se o número de faltas for maior que 15, ele é reprovado por falta.
 
+package TesteDeSoftwareQA;
 
-
-
-
-
-
-package exemplos;
-public class Somas {
-		public static void main(String [] args) {
-		//Entrada de Dados
-		int a= 6 * (3+2);       //Processamento
-		int b= 2+(6*(3+2)) ;          //Processamento
-		int c= 2+(3*6)/(2+4) ;        //Processamento
-		int d= 2*(8/(3+1))   ;      //Processamento
-		int e= 3+(16-2)/(2*(9-2)) ;        //Processamento
-		int f= (6/3)+(8/2)   ;      //Processamento
-		int g= ((3+(8/2))*4)+(3*2)  ;       //Processamento
-		int h= (6*(3*3)+6)-10  ;       //Processamento
-		int i=  (((10*8)+3)*9)  ;      //Processamento
-		int j=  ((-12)*(-4))+(3*(-4)) ;       //Processamento
-		
-		//Saida
-		System.out.println(a);
-		System.out.println(b);
-		System.out.println(c);
-		System.out.println(d);
-		System.out.println(e);
-		System.out.println(f);
-		System.out.println(g);
-		System.out.println(h);
-		System.out.println(i);
-		System.out.println(j);
-	}
-}
-
-
-
-
-
-
-
-package exemplos;
-public class soma_pronta {
-		public static void main(String [] args) {
-		//Entrada de Dados
-		int valor1=10;
-		int valor2=12;
-		//Processamento
-		int soma = valor1+valor2;
-		//Saida
-		System.out.println("A soma dos valores corresponde a : "+soma);
-	}
-}
-
-
-
-
-
-
-package exemplos;
 import java.util.Scanner;
-public class Antecessor {
-		//5)escreva um algoritimo para ler um valor(so teclado) e escrever (na tela) o seu antecessor
-		public static void main(String [] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite o  valor para ver seu antecessor: ");
-		int valor1=sc.nextInt();
-		int soma= valor1-1;
-		System.out.println("O antecessor do valor digitado é  : "+soma);
-		sc.close();
-	}
-}
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        // Solicita o número de faltas do aluno
+        System.out.print("Digite o número de faltas do aluno: ");
+        int faltas = scanner.nextInt();
 
-
-
-package exemplos;
-public class Aluno {
-    // Atributos
-    private String nome;
-    private int idade;
-    private char sexo;
-    private String turma;
-    private double nota = 0.0;
-    private String situacao = "Não avaliado";
-    // Comportamento: Fazer atividades
-    public void fazerAtividades() {
-        System.out.println(nome + " está fazendo as atividades.");
-        // Implemente a lógica real das atividades aqui
-    }
-    // Comportamento: Responder chamada
-    public void responderChamada() {
-        System.out.println(nome + " está respondendo à chamada.");
-        // Implemente a lógica real de resposta à chamada aqui
-    }
-    // Comportamento: Fazer prova
-    public void fazerProva(double nota) {
-        this.nota = nota;
-
-        if (nota >= 6.0) {
-            this.situacao = "Aprovado";
+        // Verifica a situação do aluno com base no número de faltas
+        if (faltas > 15) {
+            System.out.println("Aluno reprovado por falta.");
         } else {
-            this.situacao = "Reprovado";
+            System.out.println("Aluno aprovado.");
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(26) Escreva um programa que leia o código de um produto e a quantidade comprada, e exiba o valor total a ser pago. Considere que cada produto tem um preço diferente.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o código do produto
+        System.out.print("Digite o código do produto: ");
+        int codigoProduto = scanner.nextInt();
+
+        // Solicita a quantidade comprada
+        System.out.print("Digite a quantidade comprada: ");
+        int quantidade = scanner.nextInt();
+
+        // Determina o preço com base no código do produto
+        double precoProduto;
+
+        switch (codigoProduto) {
+            case 1:
+                precoProduto = 2.5;
+                break;
+            case 2:
+                precoProduto = 3.0;
+                break;
+            case 3:
+                precoProduto = 5.0;
+                break;
+            default:
+                System.out.println("Código de produto inválido.");
+                // Fecha o scanner
+                scanner.close();
+                return;
+        }
+
+        // Calcula o valor total a ser pago
+        double valorTotal = quantidade * precoProduto;
+
+        // Exibe o valor total a ser pago
+        System.out.println("O valor total a ser pago é: R$" + valorTotal);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(27) Crie um programa que leia a idade de uma pessoa e seu sexo (M ou F) e exiba uma mensagem indicando se ela pode ou não se aposentar. Homens podem se aposentar com 65 anos ou mais, e mulheres com 60 anos ou mais.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita a idade da pessoa
+        System.out.print("Digite a idade da pessoa: ");
+        int idade = scanner.nextInt();
+
+        // Solicita o sexo da pessoa (M ou F)
+        System.out.print("Digite o sexo da pessoa (M ou F): ");
+        char sexo = scanner.next().charAt(0);
+
+        // Verifica se a pessoa pode se aposentar
+        if ((sexo == 'M' && idade >= 65) || (sexo == 'F' && idade >= 60)) {
+            System.out.println("A pessoa pode se aposentar.");
+        } else {
+            System.out.println("A pessoa ainda não pode se aposentar.");
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(28) Faça um programa que leia o peso e a altura de uma pessoa e exiba o seu Índice de Massa Corporal (IMC) e a sua classificação. Considere a tabela de classificação do IMC.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o peso da pessoa em quilogramas
+        System.out.print("Digite o peso da pessoa em quilogramas: ");
+        double peso = scanner.nextDouble();
+
+        // Solicita a altura da pessoa em metros
+        System.out.print("Digite a altura da pessoa em metros: ");
+        double altura = scanner.nextDouble();
+
+        // Calcula o IMC
+        double imc = peso / (altura * altura);
+
+        // Exibe o IMC
+        System.out.println("O Índice de Massa Corporal (IMC) é: " + imc);
+
+        // Classifica o IMC de acordo com a tabela padrão
+        if (imc < 18.5) {
+            System.out.println("Classificação: Abaixo do peso");
+        } else if (imc < 24.9) {
+            System.out.println("Classificação: Peso normal");
+        } else if (imc < 29.9) {
+            System.out.println("Classificação: Sobrepeso");
+        } else if (imc < 34.9) {
+            System.out.println("Classificação: Obesidade Grau I");
+        } else if (imc < 39.9) {
+            System.out.println("Classificação: Obesidade Grau II");
+        } else {
+            System.out.println("Classificação: Obesidade Grau III");
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(29) Escreva um programa que leia o nome e a nota de um aluno e exiba sua situação na disciplina. Se a nota for maior ou igual a 7, o aluno está aprovado. Caso contrário, está em recuperação.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o nome do aluno
+        System.out.print("Digite o nome do aluno: ");
+        String nomeAluno = scanner.nextLine();
+
+        // Solicita a nota do aluno
+        System.out.print("Digite a nota do aluno: ");
+        double nota = scanner.nextDouble();
+
+        // Verifica a situação do aluno
+        if (nota >= 7) {
+            System.out.println(nomeAluno + " está aprovado na disciplina.");
+        } else {
+            System.out.println(nomeAluno + " está em recuperação na disciplina.");
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(30) Crie um programa que leia o número de maçãs compradas e exiba o valor total a ser pago. O preço das maçãs é de R$ 0,50 cada se a quantidade for menor que 12 e R$ 0,40 cada se a quantidade for igual ou maior que 12.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o número de maçãs compradas
+        System.out.print("Digite o número de maçãs compradas: ");
+        int quantidadeMacas = scanner.nextInt();
+
+        // Calcula o valor total a ser pago
+        double precoUnitario;
+
+        if (quantidadeMacas < 12) {
+            precoUnitario = 0.50;
+        } else {
+            precoUnitario = 0.40;
+        }
+
+        double valorTotal = quantidadeMacas * precoUnitario;
+
+        // Exibe o valor total a ser pago
+        System.out.println("O valor total a ser pago é: R$" + valorTotal);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(31) Faça um programa que leia o valor do salário mínimo e o salário de um funcionário, e exiba quantos salários mínimos ele recebe.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o valor do salário mínimo
+        System.out.print("Digite o valor do salário mínimo: ");
+        double salarioMinimo = scanner.nextDouble();
+
+        // Solicita o salário do funcionário
+        System.out.print("Digite o salário do funcionário: ");
+        double salarioFuncionario = scanner.nextDouble();
+
+        // Calcula quantos salários mínimos o funcionário recebe
+        double salariosMinimos = salarioFuncionario / salarioMinimo;
+
+        // Exibe a quantidade de salários mínimos
+        System.out.println("O funcionário recebe aproximadamente " + salariosMinimos + " salários mínimos.");
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(32) Escreva um programa que leia a nota de um aluno em uma prova e exiba a sua conceituação conforme a tabela de notas.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita a nota do aluno
+        System.out.print("Digite a nota do aluno: ");
+        double nota = scanner.nextDouble();
+
+        // Determina a conceituação conforme a tabela de notas
+        char conceito;
+
+        if (nota >= 9) {
+            conceito = 'A';
+        } else if (nota >= 7.5) {
+            conceito = 'B';
+        } else if (nota >= 6) {
+            conceito = 'C';
+        } else if (nota >= 4) {
+            conceito = 'D';
+        } else {
+            conceito = 'F';
+        }
+
+        // Exibe a conceituação
+        System.out.println("Conceito do aluno: " + conceito);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(33) Crie um programa que leia o nome e o turno (M ou V) de um aluno e exiba uma mensagem de saudação de acordo com o turno. Matutino: "Bom dia, aluno", Vespertino: "Boa tarde, aluno".
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o nome do aluno
+        System.out.print("Digite o nome do aluno: ");
+        String nomeAluno = scanner.nextLine();
+
+        // Solicita o turno do aluno (M ou V)
+        System.out.print("Digite o turno do aluno (M ou V): ");
+        char turno = scanner.next().charAt(0);
+
+        // Determina a mensagem de saudação de acordo com o turno
+        String saudacao;
+
+        if (turno == 'M' || turno == 'm') {
+            saudacao = "Bom dia, " + nomeAluno + "!";
+        } else if (turno == 'V' || turno == 'v') {
+            saudacao = "Boa tarde, " + nomeAluno + "!";
+        } else {
+            saudacao = "Turno inválido.";
+            // Fecha o scanner
+            scanner.close();
+            return;
+        }
+
+        // Exibe a mensagem de saudação
+        System.out.println(saudacao);
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(34) Faça um programa que leia a idade de uma pessoa e exiba se ela pode ou não votar. O voto é obrigatório para pessoas entre 18 e 70 anos, e facultativo para pessoas entre 16 e 18 anos e com mais de 70 anos.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita a idade da pessoa
+        System.out.print("Digite a idade da pessoa: ");
+        int idade = scanner.nextInt();
+
+        // Verifica se a pessoa pode votar
+        if (idade >= 18 && idade <= 70) {
+            System.out.println("Voto obrigatório.");
+        } else if ((idade >= 16 && idade < 18) || idade > 70) {
+            System.out.println("Voto facultativo.");
+        } else {
+            System.out.println("A pessoa não pode votar.");
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+(35) Escreva um programa que leia três números inteiros e exiba a média aritmética. Se a média for maior ou igual a 7, exiba a mensagem "Aprovado", caso contrário, exiba a mensagem "Reprovado".
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita três números inteiros
+        System.out.print("Digite o primeiro número inteiro: ");
+        int numero1 = scanner.nextInt();
+
+        System.out.print("Digite o segundo número inteiro: ");
+        int numero2 = scanner.nextInt();
+
+        System.out.print("Digite o terceiro número inteiro: ");
+        int numero3 = scanner.nextInt();
+
+        // Calcula a média aritmética
+        double media = (numero1 + numero2 + numero3) / 3.0;
+
+        // Exibe a média
+        System.out.println("Média aritmética: " + media);
+
+        // Verifica se a média é maior ou igual a 7
+        if (media >= 7) {
+            System.out.println("Aprovado");
+        } else {
+            System.out.println("Reprovado");
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
+}
+
+ criar 15 exercícios de lógica de programação envolvendo ESTRUTURAS DE REPETIÇÃO FOR
+
+(36) Faça um programa que exiba os números de 1 a 10.
+
+package TesteDeSoftwareQA;
+
+public class ExibirNumeros {
+
+    public static void main(String[] args) {
+        // Usando um loop for para exibir os números de 1 a 10
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
         }
     }
-    // Métodos para obter informações
-    public String getNome() {
-        return nome;
-    }
-    public int getIdade() {
-        return idade;
-    }
-    public char getSexo() {
-        return sexo;
-    }
-    public String getTurma() {
-        return turma;
-    }
-    public double getNota() {
-        return nota;
-    }
-    public String getSituacao() {
-        return situacao; 
+}
+
+
+(37) Escreva um programa que calcule a soma dos números de 1 a 100.
+
+package TesteDeSoftwareQA;
+
+public class SomaNumeros {
+
+    public static void main(String[] args) {
+        int soma = 0;
+
+        // Usando um loop for para calcular a soma dos números de 1 a 100
+        for (int i = 1; i <= 100; i++) {
+            soma += i;
+        }
+
+        // Exibe a soma
+        System.out.println("A soma dos números de 1 a 100 é: " + soma);
     }
 }
 
 
+(38) Crie um programa que exiba os números pares de 1 a 50.
+
+package TesteDeSoftwareQA;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        // Usando um loop for para exibir os números pares de 1 a 50
+        for (int i = 2; i <= 50; i += 2) {
+            System.out.println(i);
+        }
+    }
+}
 
 
+(39) Faça um programa que leia 5 números inteiros e exiba a média aritmética dos valores lidos.
 
+package TesteDeSoftwareQA;
 
-
-package exemplos;
 import java.util.Scanner;
-public class AreaRetangulo{
-		//6)escreva um algoritmo para ler as dimensões de um retangulo (base e altura), calcular e escrever a area do retangulo
-		public static void main(String [] args) {	
-		Scanner sc = new Scanner(System.in);	
-		System.out.println("Programa que efetua o calculo da area do retangulo: ");
-		System.out.println("Digite o valor da base do retangulo: ");
-		float base=sc.nextFloat();	
-		System.out.println("Digite o valor da altura do retangulo: ");
-		float altura=sc.nextFloat();	
-		float area= base*altura;
-		System.out.println("o valor da area do retangulo é : "+area);
-		sc.close();
-	}
-}
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        // Solicita 5 números inteiros do usuário
+        System.out.println("Digite 5 números inteiros:");
 
+        int soma = 0;
 
+        // Usando um loop for para ler os números e calcular a soma
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Número " + (i + 1) + ": ");
+            int numero = scanner.nextInt();
+            soma += numero;
+        }
 
+        // Calcula a média aritmética
+        double media = (double) soma / 5;
 
-package exemplos;
-public class Caneta {
-    // ATRIBUTOS
-    String cor;
-    double ponta;
-    int carga;
-    boolean tampada;
-    //METODO CONSTRUTOR
-    public Caneta(String cor, double p) {
-    	this.carga=100;
-    	this.tampada=true;
-    	this.cor=cor;
-    	this.ponta=p;
-    }
-    
-    // MÉTODOS
-    public void escrever() {
-        if (this.tampada == true)
-            System.out.println("Erro! A caneta está tampada");
-        else
-            System.out.println("Escrevendo");
-    }
-    public void tampar() {
-        this.tampada = true;
-    }
-    public void destampar() {
-        this.tampada = false;
-    }
-    public void estado() {
-        System.out.println("Cor: " + this.cor);
-        System.out.println("Ponta: " + this.ponta);
-        System.out.println("Está tampada? " + this.tampada);
-        System.out.println("A carga está em " + this.carga + "%");
+        // Exibe a média
+        System.out.println("A média aritmética dos números é: " + media);
+
+        // Fecha o scanner
+        scanner.close();
     }
 }
 
+(40) Escreva um programa que leia um número inteiro e exiba a tabuada desse número até o décimo valor.
 
+package TesteDeSoftwareQA;
 
-
-
-
-
-package exemplos;
-public class Carro {
-    // ATRIBUTOS = CARACTERISTICAS
-    private String cor;
-    private String marca;
-    private String modelo;
-    private int ano;
-    private double preco;
-    private int velocidade=0;
-    private boolean ligado;
-    	//METODOS = COMPORTAMENTOS
-    public void ligar()
-    {
-    	if(this.ligado==true)
-    		System.out.println("Erro!!! O carro esta ligado");
-    	else
-    		this.ligado=true;
-    }
-    
-    public void desligar()
-    {
-    	if(this.ligado==false)
-    		System.out.println("Erro!!!! O carro esta desligado");
-    	else
-    		this.ligado=false;
-    }
-    public void acelerar()
-    {
-    	if(this.ligado==false)
-    		System.out.println("Erro! ligue o carro");
-    	else
-    		this.velocidade+=5;  //this.velocidade=this.velocidade+5
-    }
-   public void freiar() {
-    		if(this.velocidade>0)
-    			this.velocidade--;
-    		else
-    			this.velocidade=0;
-}
- 	//METODOS ACESSORES-GETTERS E
-   //METODOS MODIFICADORES - SETTER
-   public String getCor() {
-		return cor;
-	}
-
-	public void setCor(String cor) {
-		this.cor = cor;
-	}
-
-	public String getMarca() {
-		return marca;
-	}
-
-	public void setMarca(String marca) {
-		this.marca = marca;
-	}
-
-	public String getModelo() {
-		return modelo;
-	}
-
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
-	}
-
-	public int getAno() {
-		return ano;
-	}
-
-	public void setAno(int ano) {
-		this.ano = ano;
-	}
-
-	public double getPreco() {
-		return preco;
-	}
-
-	public void setPreco(double preco) {
-		this.preco = preco;
-	}
-
-	public int getVelocidade() {
-		return velocidade;
-	}
-	public void estado()
-	{
-		System.out.println("\nA cor do carro e: "+this.cor);
-		System.out.println("A marca e: "+this.marca);
-		System.out.println("O modelo e: "+this.modelo);
-		System.out.println("O ano e: "+this.ano);
-		System.out.println("O valor e: "+this.preco);
-		System.out.println("O carro esta ligado ? "+this.ligado);
-		System.out.println("Qual a velocidade atual ? "+this.velocidade+" km/h");
-    }
-}
-
-
-
-
-
-
-package exemplos;
 import java.util.Scanner;
-public class Exercicio11 {
-		//11) uma revendedora de carros usados paga a seus funcionarios vendedores um salario fixo por mes, mais uma comissão 
-		//tambem fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas. escrever um algoritmo que leia o 
-	        //numero de carros por ele vendidos, o valor toral de suas vendas, o salario fixo e o valor que ele recebe por carro vendido, 
-		//calcule e escreva o salario final do vendedor
-		public static void main(String [] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite o valor do seu salario fixo por mes: R$");
-		float salarioFixo=sc.nextFloat();
-		System.out.println("Digite o valor da sua comissão que recebe por cada carro vendido: RS");
-		float comissaoFixa=sc.nextFloat();
-		System.out.println("Digite a quantidade de carros vendidos no mes: ");
-		float quantidadeCarros=sc.nextFloat();
-		System.out.println("Digite o valor total vendido no mes: ");
-		float valorTotal=sc.nextFloat();
-		float  totalComissao = quantidadeCarros*comissaoFixa;
-		float porcentagemValor= valorTotal*5/100;
-		float valorFinal= salarioFixo+totalComissao+porcentagemValor;
-		System.out.println("O valor final do automovel corresponde a: R$"+valorFinal);
-		sc.close();
-	}
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita um número inteiro do usuário
+        System.out.print("Digite um número inteiro para a tabuada: ");
+        int numero = scanner.nextInt();
+
+        // Usando um loop for para exibir a tabuada até o décimo valor
+        for (int i = 1; i <= 10; i++) {
+            int resultado = numero * i;
+            System.out.println(numero + " x " + i + " = " + resultado);
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
 }
 
+(41) Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número.
 
+package TesteDeSoftwareQA;
 
-
-
-
-
-package exemplos;
 import java.util.Scanner;
-public class Exercicios09 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-	System.out.println("Digite o seu salario mensal atual : R$");
-	float salario=sc.nextFloat();
-	System.out.println("Digite a porcentagem % de reajustedo seu salario :");
-	float porcentagem = sc.nextFloat();
-	float	aumentoReal = salario* porcentagem / 100;
-	float salarioFinal = aumentoReal+salario;
-	System.out.println("O valor do novo salario é : R$ "+salarioFinal);
-	sc.close();
-	}
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita um número inteiro positivo do usuário
+        System.out.print("Digite um número inteiro positivo: ");
+        int numero = scanner.nextInt();
+
+        // Verifica se o número é positivo
+        if (numero <= 0) {
+            System.out.println("Por favor, digite um número inteiro positivo.");
+            // Fecha o scanner e encerra o programa
+            scanner.close();
+            return;
+        }
+
+        // Exibe os divisores do número
+        System.out.println("Os divisores de " + numero + " são:");
+
+        for (int i = 1; i <= numero; i++) {
+            if (numero % i == 0) {
+                System.out.println(i);
+            }
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
 }
 
+(42) Faça um programa que leia um número inteiro e exiba se ele é um número primo.
 
+package TesteDeSoftwareQA;
 
-
-
-
-
-package exemplos;
 import java.util.Scanner;
-public class IdadeEmDias {
-		//7)faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e escreva
-		//a idade dessa pessoa expressa apenas em dias. considerar ano com 365 dias e mes com 30 dias
-		public static void main(String [] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite a quantidade de anos vividos: ");
-		byte ano=sc.nextByte();	
-		System.out.println("Digite a quantidade de meses vividos depois do seu aniversario: ");
-		byte mes=sc.nextByte();	
-		System.out.println("Digite a quantidade que passou do seu último mesversario:  ");
-		byte dia=sc.nextByte();	
-		int soma1= ano*365;
-		int soma2= mes*30;
-		int soma3= dia;
-		int total=soma1+soma2+soma3;
-		System.out.println("anos : "+ano);
-		System.out.println("meses : "+mes);
-		System.out.println("dias : "+dia);
-		System.out.println("A quantidade de dias vividos é: "+total);
-		sc.close();
-	}
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita um número inteiro do usuário
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        // Verifica se o número é um número primo
+        boolean primo = true;
+
+        if (numero <= 1) {
+            primo = false;
+        } else {
+            for (int i = 2; i <= Math.sqrt(numero); i++) {
+                if (numero % i == 0) {
+                    primo = false;
+                    break;
+                }
+            }
+        }
+
+        // Exibe o resultado
+        if (primo) {
+            System.out.println(numero + " é um número primo.");
+        } else {
+            System.out.println(numero + " não é um número primo.");
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
 }
 
+(43) Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido.
 
+package TesteDeSoftwareQA;
 
-
-
-
-
-
-package exemplos;
 import java.util.Scanner;
-public class IfElse {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite um numero:");
-		int numero = sc.nextInt();
-		if (numero == 1) {
-			System.out.println("Domingo");
-		} else if (numero == 2) {
-			System.out.println("Segunda");
-		} else if (numero == 3) {
-			System.out.println("Terça-Feira");
-		} else if (numero == 4) {
-			System.out.println("Quarta-Feira");
-		} else if (numero == 5) {
-			System.out.println("Quinta-Feira");
-		} else if (numero == 6) {
-			System.out.println("Sexta-feira");
-		} else if (numero == 7) {
-			System.out.println("Sabado");
-		} else {
-			System.out.println("Não possui numero correspondente");
-			sc.close();
-		}
-	}
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita um número inteiro do usuário
+        System.out.print("Digite um número inteiro para a sequência de Fibonacci: ");
+        int numero = scanner.nextInt();
+
+        // Exibe a sequência de Fibonacci até o número inserido
+        System.out.println("A sequência de Fibonacci até " + numero + " é:");
+
+        int termo1 = 0, termo2 = 1;
+
+        while (termo1 <= numero) {
+            System.out.print(termo1 + " ");
+
+            int soma = termo1 + termo2;
+            termo1 = termo2;
+            termo2 = soma;
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
 }
 
+(44) Crie um programa que leia o nome e a idade de 5 pessoas e exiba a média das idades.
 
+package TesteDeSoftwareQA;
 
-
-
-
-package exemplos;
 import java.util.Scanner;
-public class SalarioPercentual {
-		//9)escreva um algoritmo para ler o salario mensal atual de um funcionario  
-		//e o percentual de reajuste. calcular e escrever o valor do novo salario.
-		public static void main(String [] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite seu salario antigo mensal: ");
-		double salario=sc.nextDouble();
-		System.out.println("Digite o percentual de reajuste: ");
-		double reajuste=sc.nextDouble();
-		double reajuste1= 1+ reajuste/100;
-		double salario1= salario*reajuste1;
-		System.out.println("O novo salario sera : "+salario1);
-		sc.close();
-	}
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Variável para armazenar a soma das idades
+        int somaIdades = 0;
+
+        // Solicita o nome e a idade de 5 pessoas
+        for (int i = 1; i <= 5; i++) {
+            System.out.print("Digite o nome da pessoa " + i + ": ");
+            String nome = scanner.next();
+
+            System.out.print("Digite a idade da pessoa " + i + ": ");
+            int idade = scanner.nextInt();
+
+            // Adiciona a idade à soma
+            somaIdades += idade;
+        }
+
+        // Calcula a média das idades
+        double mediaIdades = (double) somaIdades / 5;
+
+        // Exibe a média das idades
+        System.out.println("A média das idades é: " + mediaIdades);
+
+        // Fecha o scanner
+        scanner.close();
+    }
 }
 
+(45) Faça um programa que exiba os primeiros 20 números da sequência de Fibonacci.
 
+package TesteDeSoftwareQA;
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        // Exibe os primeiros 20 números da sequência de Fibonacci
+        System.out.println("Os primeiros 20 números da sequência de Fibonacci são:");
 
-package exemplos;
+        int termo1 = 0, termo2 = 1;
+
+        for (int i = 0; i < 20; i++) {
+            System.out.print(termo1 + " ");
+
+            int soma = termo1 + termo2;
+            termo1 = termo2;
+            termo2 = soma;
+        }
+    }
+}
+
+(46) Escreva um programa que leia um número inteiro e exiba a soma de todos os números pares entre 1 e o número lido.
+
+package TesteDeSoftwareQA;
+
 import java.util.Scanner;
-public class IfElseTernario {
-	public static void main(String[] args) {
-Scanner sc = new Scanner (System.in);
-	System.out.println("Digite um valor :");
-	int valor=sc.nextInt();
-	String saida = (valor%2==0)?"Valor par":"Valor impar";
-	System.out.println(saida);
-sc.close();
-	}
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita um número inteiro do usuário
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        // Verifica se o número é positivo
+        if (numero <= 0) {
+            System.out.println("Por favor, digite um número inteiro positivo.");
+            // Fecha o scanner e encerra o programa
+            scanner.close();
+            return;
+        }
+
+        // Calcula a soma dos números pares
+        int somaPares = 0;
+
+        for (int i = 2; i <= numero; i += 2) {
+            somaPares += i;
+        }
+
+        // Exibe a soma dos números pares
+        System.out.println("A soma dos números pares entre 1 e " + numero + " é: " + somaPares);
+
+        // Fecha o scanner
+        scanner.close();
+    }
 }
 
+(47) Crie um programa que exiba os números ímpares de 50 a 1.
 
+package TesteDeSoftwareQA;
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        // Usando um loop for para exibir os números ímpares de 50 a 1
+        for (int i = 49; i >= 1; i -= 2) {
+            System.out.println(i);
+        }
+    }
+}
 
+(48) Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente.
 
-//Desvio condicional Simples
-package exemplos;
+package TesteDeSoftwareQA;
+
 import java.util.Scanner;
-public class IfElseEncadeado {
-public static void main(String[] args) {
-Scanner sc = new Scanner(System.in);
-		//Coletendo dados e salvando
-		System.out.println("Digite sua idade:");
-		int idade = sc.nextInt();
-		//mostrando resultados
-		if(idade < 16) {
-			System.out.println("Voce ainda nao pode voltar");
-		} else if(idade < 18) {
-			System.out.println("Voce pode votar, porem é opcional");
-		}else {
-			System.out.println("Voce pode votar");
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita um número inteiro do usuário
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        // Converte o número em uma string para facilitar a manipulação dos dígitos
+        String numeroString = Integer.toString(numero);
+
+        // Exibe os dígitos separadamente
+        System.out.println("Os dígitos de " + numero + " são:");
+
+        for (int i = 0; i < numeroString.length(); i++) {
+            System.out.println(numeroString.charAt(i));
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
 }
-sc.close();
-}
-}
 
+(49) Escreva um programa que calcule o fatorial de um número inteiro inserido pelo usuário.
 
+package TesteDeSoftwareQA;
 
-
-
-
-package Exemploss;
 import java.util.Scanner;
-public class EnquantoTabuada {
-public static void main(String[] args) {
-Scanner sc = new Scanner(System.in);	
-	System.out.println("Digite um numero que deseja saber a sua tabuada :");
-	int numero=sc.nextInt();
-	int contadora=1;
-	while(contadora<11) {
-		System.out.println(numero+"x"+contadora+"="+numero*contadora);
-		contadora++;	
-}
-sc.close();
-}
-}
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        // Solicita um número inteiro do usuário
+        System.out.print("Digite um número inteiro para calcular o fatorial: ");
+        int numero = scanner.nextInt();
 
+        // Verifica se o número é não-negativo
+        if (numero < 0) {
+            System.out.println("Por favor, digite um número não-negativo.");
+            // Fecha o scanner e encerra o programa
+            scanner.close();
+            return;
+        }
 
+        // Calcula o fatorial do número
+        long fatorial = 1;
 
-package Exemploss;
-public class MostrarImpares {
-public static void main(String[] args) {
-	int contadora=1;
-	System.out.println("Os numeros impares entre (0 e 20) é ");
-	while(contadora<21) {
-		if(contadora%2==1) {
-			System.out.println(contadora);
-		}
-		contadora++;
-}
-}
-}
+        for (int i = 1; i <= numero; i++) {
+            fatorial *= i;
+        }
 
+        // Exibe o resultado
+        System.out.println("O fatorial de " + numero + " é: " + fatorial);
 
-
-
-
-
-
-
-
-
-package Exemploss;
-public class While {
-	public static void main(String[] args) {	
-		int contadora = 0 ; 		
-		while (contadora<8) {
-			System.out.println(contadora);
-			contadora=contadora+1;
-}
-}
+        // Fecha o scanner
+        scanner.close();
+    }
 }
 
+(50) Crie um programa que leia o nome e a idade de várias pessoas até que o nome "fim" seja informado. Ao final, exiba a média das idades.
 
+package TesteDeSoftwareQA;
 
-
-
-
-
-package Exemploss;
 import java.util.Scanner;
-public class SomaEnquanto {
-public static void main(String[] args) {
-Scanner leitura = new Scanner (System.in);
-//apresentar o total da soma obtida dos cem primeiros numeros inteiros (1+2+3+4+...+98+99+100).
-	int soma=0 ;
-	int contadora=1;
-	while(contadora<101) {
-	soma = soma+contadora;
-	contadora++;
-	System.out.println("A soma dos 100 primeiros numeros possitivos é :"+ soma);
-}
-leitura.close();	
-}
-}
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        int somaIdades = 0;
+        int contadorPessoas = 0;
 
+        // Solicita o nome e a idade até que o nome "fim" seja informado
+        while (true) {
+            System.out.print("Digite o nome da pessoa (ou 'fim' para encerrar): ");
+            String nome = scanner.next();
 
+            if (nome.equalsIgnoreCase("fim")) {
+                break; // Encerra o loop quando o nome "fim" é informado
+            }
 
-package Exemplossss;
-public class TryCatch {
-	public static void main(String[] args) {
-		try {
-			int data = 100/0;
-			System.out.println(data);
-		}catch(Exception e) {
-			System.out.println("Não é possivel efetuar a divisão por 0");
-		}
-	}
-}
+            System.out.print("Digite a idade da pessoa: ");
+            int idade = scanner.nextInt();
 
+            somaIdades += idade;
+            contadorPessoas++;
+        }
 
+        // Calcula a média das idades
+        double mediaIdades = (double) somaIdades / contadorPessoas;
 
+        // Exibe a média das idades
+        System.out.println("A média das idades é: " + mediaIdades);
 
-
-
-
-package Exemplossss;
-public class Temporizador {
-	public static void main(String[] args) throws InterruptedException {
-		for (int i = 0; i < 60; i++) {
-			for(int j = 0;j<60;j++) {
-				System.out.println(i+":"+j);
-				Thread.sleep(2000);
-			}
-		}
-	}
-
+        // Fecha o scanner
+        scanner.close();
+    }
 }
 
+(51) Faça um programa que exiba os números de 1 a 10 usando o loop "while".
 
+package TesteDeSoftwareQA;
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        // Inicializa a variável de controle
+        int i = 1;
 
+        // Usa o loop while para exibir os números de 1 a 10
+        while (i <= 10) {
+            System.out.println(i);
+            i++; // Incrementa a variável de controle
+        }
+    }
+}
 
+(52) Escreva um programa que calcule a soma dos números de 1 a 100 usando o loop "while".
 
-package Exemplossss;
+package TesteDeSoftwareQA;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        // Inicializa a variável de controle e a variável para armazenar a soma
+        int i = 1;
+        int soma = 0;
+
+        // Usa o loop while para calcular a soma dos números de 1 a 100
+        while (i <= 100) {
+            soma += i;
+            i++; // Incrementa a variável de controle
+        }
+
+        // Exibe a soma
+        System.out.println("A soma dos números de 1 a 100 é: " + soma);
+    }
+}
+
+(53) Crie um programa que exiba os números pares de 1 a 50 usando o loop "while".
+
+package TesteDeSoftwareQA;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        // Inicializa a variável de controle
+        int i = 2;
+
+        // Usa o loop while para exibir os números pares de 1 a 50
+        while (i <= 50) {
+            System.out.println(i);
+            i += 2; // Incrementa a variável de controle por 2 para obter números pares
+        }
+    }
+}
+
+(54) Faça um programa que leia 5 números inteiros usando o loop "while" e exiba a média aritmética dos valores lidos.
+
+package TesteDeSoftwareQA;
+
 import java.util.Scanner;
-public class Tempoorizador {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite o valor dos minutos");
-		int minutos = sc.nextInt();
-		System.out.println("Digite o valor dos segundos");
-		int segundos = sc.nextInt();
-		try {
-		for(int i = minutos; i >=0;i--) {
-			for(int j =segundos; j >=0; j--) {
-				System.out.println(i+":"+j);
-				Thread.sleep(1000);
-			}
-			segundos=59;
-		}
-		System.out.println("BOOMMMM");
-	}catch(Exception e) {
-		System.out.println("Ele nao esperou 1 segundo");
-	}
-		sc.close();
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int soma = 0;
+        int contador = 0;
+
+        // Usa o loop while para ler 5 números inteiros
+        while (contador < 5) {
+            System.out.print("Digite um número inteiro: ");
+            int numero = scanner.nextInt();
+
+            soma += numero;
+            contador++;
+        }
+
+        // Calcula a média aritmética
+        double media = (double) soma / 5;
+
+        // Exibe a média
+        System.out.println("A média dos números é: " + media);
+
+        // Fecha o scanner
+        scanner.close();
+    }
 }
-}
 
+(55) Escreva um programa que leia um número inteiro e exiba a tabuada desse número até o décimo valor usando o loop "while".
 
+package TesteDeSoftwareQA;
 
-
-
-
-
-package Exemplossss;
 import java.util.Scanner;
-public class ExemploWhileDC {
-public static void main(String[] args) {
-Scanner sc = new Scanner (System.in);
-int x=1, r=0;
-String resp;
-resp="sim";
-while (resp.equals("sim")) {
-	System.out.println("Digite um numero:");
-	x=sc.nextInt();
-	r= x*3;
-	System.out.println("A resposta da multiplicação é :"+r);
-	System.out.println("Deseja efetuar outra operação ? :");
-	resp=sc.next();
-	System.out.println(resp);
-}
-sc.close();	
-}
-}
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        // Solicita um número inteiro do usuário
+        System.out.print("Digite um número inteiro para exibir a tabuada: ");
+        int numero = scanner.nextInt();
 
+        // Inicializa a variável de controle
+        int i = 1;
 
+        // Usa o loop while para exibir a tabuada até o décimo valor
+        while (i <= 10) {
+            int resultado = numero * i;
+            System.out.println(numero + " x " + i + " = " + resultado);
+            i++; // Incrementa a variável de controle
+        }
 
-
-
-
-
-package Exemplossss;
-public class ExemplosDoWhille {
-	public static void main(String[] args) {
-		int contadora = 0;
-		do {
-			System.out.println(contadora);
-			contadora++;
-		} while (contadora<9);
-	}
+        // Fecha o scanner
+        scanner.close();
+    }
 }
 
+(56) Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número usando o loop "while".
 
+package TesteDeSoftwareQA;
 
-
-
-
-
-
-
-
-
-
-package Exemplossss;
 import java.util.Scanner;
-public class ExemploDoWhileDC {
-public static void main(String[] args) {
-Scanner sc = new Scanner(System.in);	
-int x,r;		
-String resp;
-resp="sim";
-do {
-	System.out.println("Digite um valor para ser multiplicado");
-	x=sc.nextInt();
-	r=x*3;
-	System.out.println("A resposta da multiplicação é :"+r);
-	System.out.println("Deseja continuar ?");
-	resp=sc.next();
-}while(resp.equals("sim"));
-		System.out.println("Encerrar Programa");	
-sc.close();	
-}
-}
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        // Solicita um número inteiro positivo do usuário
+        System.out.print("Digite um número inteiro positivo: ");
+        int numero = scanner.nextInt();
 
+        // Verifica se o número é positivo
+        if (numero <= 0) {
+            System.out.println("Por favor, digite um número inteiro positivo.");
+            // Fecha o scanner e encerra o programa
+            scanner.close();
+            return;
+        }
 
+        // Inicializa a variável de controle
+        int divisor = 1;
 
+        // Usa o loop while para encontrar os divisores do número
+        while (divisor <= numero) {
+            if (numero % divisor == 0) {
+                System.out.println(divisor);
+            }
+            divisor++;
+        }
 
-
-
-
-package Exemplossss;
-public class Cronoometro {
-	public static void main(String[] args) {
-		try {
-			for (int i = 0; i < 60; i++) {
-				for (int j = 0; i < 60; i++) {
-						System.out.println(i + "i" +j);
-						Thread.sleep(1000);
-					}
-				}
-			}catch(Exception e) {
-				System.out.println("Não foi possivel adicionar um segundo em casa");
-		}
-	}
+        // Fecha o scanner
+        scanner.close();
+    }
 }
 
+(57) Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "while".
 
+package TesteDeSoftwareQA;
 
-
-
-
-package Exemplossss;
-public class Cronometro {
-	public static void main(String[] args) {
-		for (int i = 0; i < 60; i++) {
-			for(int j = 0;j<60;j++) {
-				System.out.println(i+":"+j);
-			}
-		}
-	}
-}
-
-
-
-
-
-package Exercicios;
-public class ExemploMatriz {
-	public static void main(String[] args) {
-		int[][] numero = {{1,2,3,4},{5,6,7}};
-		System.out.println(numero[0][1]);
-	}
-}
-
-
-
-
-package Exercicios;
-public class Exercicio01EstruturaFormaanzano01 {
-	public static void main(String[] args) {
-		for(int i = 15; i <=200; i++) {
-			int quadrado  = i*i;
-			System.out.println("O quadrado de :"+i+"é:"+quadrado);
-			
-		}
-	}
-}
-
-
-
-
-
-package Exercicios;
 import java.util.Scanner;
-public class Exercicio02EstruturaFormaazano01 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite um numero para saber a tabuada");
-		int valor=sc.nextInt();
-		for(int i = 1; i < 11; i++) {
-			System.out.println(valor + "X"+ i+ "="+valor*i);	
-		sc.close();
-		}
-		}
-}
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        // Solicita um número inteiro do usuário
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
 
+        // Verifica se o número é positivo
+        if (numero <= 0) {
+            System.out.println("Por favor, digite um número inteiro positivo.");
+            // Fecha o scanner e encerra o programa
+            scanner.close();
+            return;
+        }
 
+        // Inicializa variáveis
+        int divisor = 2;
+        boolean primo = true;
 
-package Exercicios;
-public class Exercicio03EstruturaFormaanzano01 {
-	public static void main(String[] args) {
-		int soma = 0;
-		for(int i = 1; i <= 100; i++) {
-			soma= soma+i;
-		}
-		System.out.println("A soma dos valores é igual : "+soma);
-	}
-}
+        // Usa o loop while para verificar se o número é primo
+        while (divisor <= numero / 2) {
+            if (numero % divisor == 0) {
+                primo = false;
+                break; // Se encontrar um divisor, o número não é primo, então sai do loop
+            }
+            divisor++;
+        }
 
+        // Exibe o resultado
+        if (primo) {
+            System.out.println(numero + " é um número primo.");
+        } else {
+            System.out.println(numero + " não é um número primo.");
+        }
 
-
-
-
-
-package Exercicios;
-public class Exercicio04EstruturaFormaanzano01 {
-	public static void main(String[] args) {
-		int somatorio = 0;
-		for(int i = 1; i < 501; i++) {
-			if(i % 2 == 0) {
-				somatorio = somatorio + i;
-				System.out.println("O valor total da soma é :" +somatorio);
-			}
-			
-		}
-	}
-}
-
-
-
-
-
-
-
-package Exercicios;
-public class Exercicio05EstruturaFormaanzano01 {
-	public static void main(String[] args) {
-	/*	String[] carro = {"Gol","Santana","Fusca","Puma"};
-		System.out.println(carro[0]);
-		carro[3]="Marea";
-		System.out.println(carro[3]);
-		int[] numero = { 12, 3, 5, 6, 7 };
-		System.out.println(numero[4]);
-		System.out.println(numero.length);
-		String [] nome= {"Jailson","André","Rafael","Daniel","Maria"};
-		for (int i = 0; i < nome.length; i++) {
-			System.out.println(nome[i]);
-			*/
-		String [] nome= {"Jailson","André","Rafael","Daniel","Maria","Erick","Socorro"};
-		for(String i :nome) {
-			System.out.println(i);
-		}
-		}
-	}
-
-
-
-
-
-
-
-
-package Exxxxxxxxxxxxxxxxxxxxxxxxxxx;
-public interface Controle {
-    void ligar();
-    void desligar();
-    void aumentarVolume();
-    void diminuirVolume();
-    void mudar(double x);
-}
-
-
-
-
-
-
-package Exxxxxxxxxxxxxxxxxxxxxxxxxxx;
-		public class ControleApp {
-		public static void main(String[] args) {
-		ControleTV ctv = new ControleTV();
-        ControleRadio cr = new ControleRadio();
-        System.out.println("Dados do controle da tv");
-        System.out.println("TV esta ligada? " +ctv.getLigado());
-        System.out.println("Canal: "+ctv.getCanal());
-        System.out.println("Volume: " +ctv.getVol());
-        System.out.println("\n\nDados do controle do Radio");
-        System.out.println("Radio esta ligado? "+cr.getLigado());
-        System.out.println("Estacao: "+cr.getEstacao());
-        System.out.println("Volume: "+cr.getVol());
+        // Fecha o scanner
+        scanner.close();
     }
 }
 
+(58) Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido usando o loop "while".
 
+package TesteDeSoftwareQA;
 
-
-
-
-
-
-package Exxxxxxxxxxxxxxxxxxxxxxxxxxx;
-public class ControleRadio implements Controle {
-    private boolean ligado;
-    private int vol;
-    private double estacao;
-    public void ligar() {
-        if (this.ligado == true)
-            System.out.println("Erro! Rádio já está ligado");
-        else
-            this.ligado = true;
-    }
-    public boolean getLigado() {
-        return ligado;
-    }
-    public int getVol() {
-        return vol;
-    }
-    public double getEstacao() {
-        return estacao;
-    }
-    public void desligar() {
-        if (this.ligado == true) {
-            this.ligado = false;
-            this.vol = 0;
-            this.estacao = 0;
-        } else
-            System.out.println("Erro! Rádio já está desligado");
-    }
-    public void aumentarVolume() {
-        if (this.ligado == true && this.vol < 100)
-            this.vol++;
-        else
-            System.out.println("Erro! Verifique se está ligado ou se o volume está no máximo");
-    }
-    public void diminuirVolume() {
-        if (this.ligado == true && this.vol > 0)
-            this.vol--;
-        else
-            System.out.println("Erro! Rádio já está ligado");
-    }
-    public void mudar(double x) {
-        // Implemente a lógica para mudar a estação
-    }
-}
-
-
-
-
-
-
-
-
-package Exxxxxxxxxxxxxxxxxxxxxxxxxxx;
-public class ControleTV implements Controle {
-    private boolean ligado;
-    private int vol = 5;
-    private int canal;
-    public void ligar() {
-        if (this.ligado == true)
-            System.out.println("Erro! A TV já está ligada");
-        else
-            this.ligado = true;
-    }
-    public boolean getLigado() {
-        return ligado;
-    }
-    public int getVol() {
-        return vol;
-    }
-    public int getCanal() {
-        return canal;
-    }
-    public void desligar() {
-        if (this.ligado == true) {
-            this.ligado = false;
-            this.vol = 0;
-            this.canal = 0;
-        } else
-            System.out.println("Erro! A TV já está desligada");
-    }
-    public void aumentarVolume() {
-        if (this.ligado == true && this.vol < 100)
-            this.vol++;
-        else
-            System.out.println("Erro! Verifique se a TV está ligada ou se o volume está no limite");
-    }
-    public void diminuirVolume() {
-        if (this.ligado == true && this.vol > 0)
-            this.vol--;
-        else
-            System.out.println("Erro! Verifique se a TV está ligada ou se o volume está no mínimo");
-    }
-    public void mudar(double x) {
-        // Implemente a lógica para mudar de canal ou estação
-    }
-}
-
-
-
-
-
-
-
-
-
-package Heranca;
-public class Poupanca extends ContaCorrente{
-	public void sacar(double valor)
-	{
-		this.saldo=this.saldo-valor;
-	}
-}
-
-
-
-
-
-package Heranca;
-public class ContaEspecial extends ContaCorrente{
-	public void sacar(double valor)
-	{
-		double taxa=valor*0.001;
-		this.saldo=this.saldo-valor-taxa;
-	}
-}
-
-
-
-
-
-
-package Heranca;
-public class ContaCorrente {
-	private String nome;
-	private String numConta;
-	protected double saldo=0;
-	public void depositar(double valor)
-	{
-		this.saldo=this.saldo+valor;
-	}
-	public double verSaldo()
-	{
-		return this.saldo;
-		
-	}
-	public void sacar (double valor)
-	{
-		double taxa=valor*0.05;
-		this.saldo=this.saldo-valor-taxa;
-	}
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public String getNumConta() {
-		return numConta;
-	}
-	public void setNumConta(String numConta) {
-		this.numConta = numConta;
-	}
-}
-
-
-
-
-package Polimorfismo;
-public class ExemploSobrecarga {
-	public static void main(String[] args) {
-		Sobrecarga s = new Sobrecarga();
-		Sobrecarga s1 = new Sobrecarga(55.7);
-		System.out.println("O valor de s é: "+s.getValor());
-		System.out.println("O valor de s1 é: "+s1.getValor());
-		s.soma();
-		System.out.println("A soma é: " +s.getValor());
-		s.soma(3.5);
-		System.out.println("A soma é: "+s.getValor());
-		s.soma(666);
-		System.out.println("A soma é: "+s.getValor());
-		s.soma(55.4, 22);
-		System.out.println("A soma é: "+s.getValor());
-		s.soma(12, 50.4);
-		System.out.println("A soma é: "+s.getValor());
-		s.soma(19, 5.0);
-		System.out.println("A soma é: "+s.getValor());
-		s.soma(33, 22, 11);
-		System.out.println("A soma é: "+s.getValor());
-	}
-}
-
-
-
-
-
-
-
-package Polimorfismo;
-public class Sobrecarga {
-	private double valor=0.0;
-	public Sobrecarga()
-	{
-		this.valor=15;
-	}
-	public Sobrecarga(double n1)
-	{
-		this.valor=23+n1;
-	}
-	
-	public void soma()
-	{
-		this.valor=5+3;
-	}
-	public void soma(int n1)
-	{
-		this.valor=5.0+n1;
-	}
-	public void soma(double n1)
-	{
-		this.valor=5+n1;
-	}
-	public void doms(int n1, int n2)
-	{
-		this.valor=n1+n2;
-	}
-	public void soma(int n1, double n2)
-	{
-		this.valor=n1+n2;
-	}
-	public void soma(double n1, int n2)
-	{
-		this.valor=n1+n2;
-	}
-	public void soma(int n1, int n2, int n3)
-	{
-		this.valor= n1 + n2 + n3;
-	}
-	public double getValor() {
-		return valor;
-	}
-}
-
-
-
-
-
-
-package Tabuada;
 import java.util.Scanner;
-public class Tabuada {
-public static void main(String[] args) {
-Scanner sc=new Scanner(System.in);
-System.out.println("Digite um numero para saber a tabuada:");
-int numero=sc.nextInt();
-int contadora=1;
-while(contadora<11) {
-System.out.println(numero+ " X " +contadora + " = " + numero*contadora);
-contadora++;
-sc.close();
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita um número inteiro do usuário
+        System.out.print("Digite um número inteiro para a sequência de Fibonacci: ");
+        int numero = scanner.nextInt();
+
+        // Verifica se o número é não-negativo
+        if (numero < 0) {
+            System.out.println("Por favor, digite um número não-negativo.");
+            // Fecha o scanner e encerra o programa
+            scanner.close();
+            return;
+        }
+
+        // Inicializa variáveis
+        int primeiroTermo = 0;
+        int segundoTermo = 1;
+
+        // Exibe a sequência de Fibonacci até o número lido
+        System.out.println("Sequência de Fibonacci até " + numero + ":");
+        System.out.print(primeiroTermo + " ");
+
+        while (segundoTermo <= numero) {
+            System.out.print(segundoTermo + " ");
+
+            int proximoTermo = primeiroTermo + segundoTermo;
+            primeiroTermo = segundoTermo;
+            segundoTermo = proximoTermo;
+        }
+
+        // Fecha o scanner
+        scanner.close();
+    }
 }
+
+(59) Crie um programa que leia o nome e a idade de 5 pessoas usando o loop "while" e exiba a média das idades.
+
+package TesteDeSoftwareQA;
+
+import java.util.Scanner;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int somaIdades = 0;
+        int contadorPessoas = 0;
+
+        // Usa o loop while para ler o nome e a idade de 5 pessoas
+        while (contadorPessoas < 5) {
+            System.out.print("Digite o nome da pessoa: ");
+            String nome = scanner.next();
+
+            System.out.print("Digite a idade da pessoa: ");
+            int idade = scanner.nextInt();
+
+            somaIdades += idade;
+            contadorPessoas++;
+        }
+
+        // Calcula a média das idades
+        double mediaIdades = (double) somaIdades / 5;
+
+        // Exibe a média das idades
+        System.out.println("A média das idades é: " + mediaIdades);
+
+        // Fecha o scanner
+        scanner.close();
+    }
 }
+
+(60) Faça um programa que exiba os primeiros 20 números da sequência de Fibonacci usando o loop "while".
+
+package TesteDeSoftwareQA;
+
+public class Atividade {
+
+    public static void main(String[] args) {
+        // Inicializa variáveis
+        int primeiroTermo = 0;
+        int segundoTermo = 1;
+        int contador = 0;
+
+        // Usa o loop while para exibir os primeiros 20 números de Fibonacci
+        System.out.println("Os primeiros 20 números da sequência de Fibonacci:");
+        while (contador < 20) {
+            System.out.print(primeiroTermo + " ");
+
+            int proximoTermo = primeiroTermo + segundoTermo;
+            primeiroTermo = segundoTermo;
+            segundoTermo = proximoTermo;
+
+            contador++;
+        }
+    }
 }
 
+(61) Escreva um programa que leia um número inteiro e exiba a soma de todos os números pares entre 1 e o número lido usando o loop "while".
 
+package TesteDeSoftwareQA;
 
+import java.util.Scanner;
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        // Solicita um número inteiro do usuário
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
 
+        // Verifica se o número é positivo
+        if (numero <= 0) {
+            System.out.println("Por favor, digite um número inteiro positivo.");
+            // Fecha o scanner e encerra o programa
+            scanner.close();
+            return;
+        }
 
+        // Inicializa variáveis
+        int somaPares = 0;
+        int i = 2;
 
+        // Usa o loop while para somar os números pares até o número lido
+        while (i <= numero) {
+            somaPares += i;
+            i += 2; // Incrementa a variável de controle por 2 para obter números pares
+        }
 
+        // Exibe a soma dos números pares
+        System.out.println("A soma dos números pares até " + numero + " é: " + somaPares);
 
+        // Fecha o scanner
+        scanner.close();
+    }
+}
 
+(62) Crie um programa que exiba os números ímpares de 1 a 50 usando o loop "while".
 
+package TesteDeSoftwareQA;
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        // Inicializa a variável de controle
+        int i = 1;
 
+        // Usa o loop while para exibir os números ímpares de 1 a 50
+        while (i <= 50) {
+            System.out.println(i);
+            i += 2; // Incrementa a variável de controle por 2 para obter números ímpares
+        }
+    }
+}
 
+(63) Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente usando o loop "while".
 
+package TesteDeSoftwareQA;
 
+import java.util.Scanner;
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        // Solicita um número inteiro do usuário
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
 
+        // Verifica se o número é não-negativo
+        if (numero < 0) {
+            System.out.println("Por favor, digite um número não-negativo.");
+            // Fecha o scanner e encerra o programa
+            scanner.close();
+            return;
+        }
 
+        // Converte o número para uma string para facilitar a manipulação dos dígitos
+        String numeroString = Integer.toString(numero);
 
+        // Inicializa a variável de controle
+        int i = 0;
 
+        // Usa o loop while para exibir os dígitos separadamente
+        while (i < numeroString.length()) {
+            char digito = numeroString.charAt(i);
+            System.out.println(digito);
+            i++;
+        }
 
+        // Fecha o scanner
+        scanner.close();
+    }
+}
 
+(64) Escreva um programa que calcule o fatorial de um número inteiro inserido pelo usuário usando o loop "while".
 
+package TesteDeSoftwareQA;
 
+import java.util.Scanner;
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        // Solicita um número inteiro do usuário
+        System.out.print("Digite um número inteiro para calcular o fatorial: ");
+        int numero = scanner.nextInt();
 
+        // Verifica se o número é não-negativo
+        if (numero < 0) {
+            System.out.println("Por favor, digite um número não-negativo.");
+            // Fecha o scanner e encerra o programa
+            scanner.close();
+            return;
+        }
 
+        // Inicializa variáveis
+        int fatorial = 1;
+        int i = 1;
 
+        // Usa o loop while para calcular o fatorial
+        while (i <= numero) {
+            fatorial *= i;
+            i++;
+        }
 
+        // Exibe o resultado
+        System.out.println("O fatorial de " + numero + " é: " + fatorial);
 
+        // Fecha o scanner
+        scanner.close();
+    }
+}
 
+(65) Crie um programa que leia o nome e a idade de várias pessoas usando o loop "while" até que o nome "fim" seja informado. Ao final, exiba a média das idades.
 
+package TesteDeSoftwareQA;
 
+import java.util.Scanner;
 
+public class Atividade {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        int somaIdades = 0;
+        int contadorPessoas = 0;
 
+        // Usa o loop while para ler o nome e a idade até que o nome "fim" seja informado
+        while (true) {
+            System.out.print("Digite o nome da pessoa (ou 'fim' para encerrar): ");
+            String nome = scanner.next();
 
+            // Verifica se o nome é "fim" para encerrar o loop
+            if (nome.equalsIgnoreCase("fim")) {
+                break;
+            }
 
+            System.out.print("Digite a idade da pessoa: ");
+            int idade = scanner.nextInt();
 
+            somaIdades += idade;
+            contadorPessoas++;
+        }
 
+        // Verifica se pelo menos uma pessoa foi inserida antes de calcular a média
+        if (contadorPessoas > 0) {
+            // Calcula a média das idades
+            double mediaIdades = (double) somaIdades / contadorPessoas;
 
+            // Exibe a média das idades
+            System.out.println("A média das idades é: " + mediaIdades);
+        } else {
+            System.out.println("Nenhuma pessoa foi inserida.");
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        // Fecha o scanner
+        scanner.close();
+    }
+}
 
